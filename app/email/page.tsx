@@ -64,16 +64,16 @@ const Email = () => {
     <>
       <Header/>
       <Script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" strategy="beforeInteractive" />
-      <div className="flex flex-col min-h-screen items-center justify-center text-gray-900 w-full dark:bg-black dark: bg-grid-white/[0.1]" style={{ fontFamily: '"Space Grotesk", "Noto Sans", sans-serif' }}>
-        <div className="bg-white shadow-lg rounded-lg p-8 w-[90%] h-[80vh] max-w-3xl mx-auto overflow-y-auto">
+      <div className="flex flex-col min-h-screen items-center justify-center text-gray-900 w-full dark:bg-black dark:bg-grid-white/[0.1]" style={{ fontFamily: '"Space Grotesk", "Noto Sans", sans-serif' }}>
+        <div className="shadow-lg rounded-lg p-8 w-[90%] h-[90vh] max-w-3xl mx-auto overflow-y-auto">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-gray-900 text-3xl font-bold">Send me an email</h2>
-            <div 
+            <h2 className="text-white text-4xl font-bold" style={{ fontFamily: "DM Serif Display, serif" }}>Email me</h2>
+            <div
               className="text-gray-600 cursor-pointer" 
               aria-label="Close" 
               onClick={() => window.history.back()}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 256 256">
                 <path
                   d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
                 ></path>
@@ -82,11 +82,10 @@ const Email = () => {
           </div>
           <form className="flex flex-col space-y-6" onSubmit={handleSubmit}>
             <label className="flex flex-col">
-              <p className="text-gray-700 text-base font-medium mb-2">Name</p>
               <input
                 name="name"
-                placeholder="Your name"
-                className="form-input w-full rounded-lg border-gray-300 bg-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4"
+                placeholder="Name"
+                className="form-input w-full rounded-lg border-white bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4"
                 type="text"
                 value={formData.name}
                 onChange={handleChange}
@@ -94,35 +93,21 @@ const Email = () => {
               />
             </label>
             <label className="flex flex-col">
-              <p className="text-gray-700 text-base font-medium mb-2">Email</p>
               <input
                 name="email"
-                placeholder="Your email"
-                className="form-input w-full rounded-lg border-gray-300 bg-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4"
+                placeholder="Email"
+                className="form-input w-full rounded-lg border-white bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4"
                 type="email"
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
             </label>
-            {/* <label className="flex flex-col">
-              <p className="text-gray-700 text-base font-medium mb-2">Subject</p>
-              <input
-                name="subject"
-                placeholder="Your subject"
-                className="form-input w-full rounded-lg border-gray-300 bg-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4"
-                type="text"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-              />
-            </label> */}
             <label className="flex flex-col">
-              <p className="text-gray-700 text-base font-medium mb-2">Message</p>
               <textarea
                 name="message"
-                placeholder="Your message"
-                className="form-input w-full rounded-lg border-gray-300 bg-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4 min-h-[320px]"
+                placeholder="Message"
+                className="form-input w-full rounded-lg border-white bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4 min-h-[30vh]"
                 value={formData.message}
                 onChange={handleChange}
                 required
@@ -131,7 +116,7 @@ const Email = () => {
             {errorMessage && <p className="text-red-500">{errorMessage}</p>}
             <button
               type="submit"
-              className="bg-blue-500 text-white rounded-lg py-3 px-6 font-bold transition-all duration-300 ease-in-out hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="bg-white text-black border border-white rounded-lg py-3 px-6 font-bold transition-all duration-300 ease-in-out hover:bg-gray-900 hover:text-white hover:border-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               Submit
             </button>
