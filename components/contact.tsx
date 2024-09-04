@@ -15,7 +15,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="p-8 flex flex-col overflow-x-hidden overflow-hidden w-full dark:bg-black bg-black dark:bg-grid-white/[0.1] relative flex items-center justify-center">
+    <div className="p-8 flex flex-col overflow-x-hidden overflow-hidden w-full dark:bg-black dark: bg-grid-white/[0.1] relative flex items-center justify-center">
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
