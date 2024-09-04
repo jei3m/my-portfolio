@@ -61,7 +61,7 @@ const Email = () => {
   };
 
   return (
-    <div className="bg-black dark: bg-grid-white/[0.1]">
+    <div className="bg-black dark:bg-grid-white/[0.1]">
       <Script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" strategy="beforeInteractive" />
       <div className="overflow-x-hidden overflow-hidden w-full relative flex items-center justify-center min-h-screen" style={{ fontFamily: '"Space Grotesk", "Noto Sans", sans-serif' }}>
         <div className="p-8 w-[90%] h-[90vh] max-w-3xl mx-auto overflow-y-auto">
@@ -84,7 +84,7 @@ const Email = () => {
               <input
                 name="name"
                 placeholder="Name"
-                className="form-input w-full rounded-lg border-white bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4"
+                className="form-input w-full rounded-lg border border-white bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4"
                 type="text"
                 value={formData.name}
                 onChange={handleChange}
@@ -95,7 +95,7 @@ const Email = () => {
               <input
                 name="email"
                 placeholder="Email"
-                className="form-input w-full rounded-lg border-white bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4"
+                className="form-input w-full rounded-lg border border-white bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4"
                 type="email"
                 value={formData.email}
                 onChange={handleChange}
@@ -106,7 +106,7 @@ const Email = () => {
               <textarea
                 name="message"
                 placeholder="Message"
-                className="form-input w-full rounded-lg border-white bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4 min-h-[30vh]"
+                className="form-input w-full rounded-lg border border-white bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4 min-h-[30vh]"
                 value={formData.message}
                 onChange={handleChange}
                 required
