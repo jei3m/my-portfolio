@@ -25,3 +25,7 @@ To get started with the development of the project locally, follow these steps:
 4. **Run the Project**
 
    To start the development server, run: `npm run dev`.
+
+## Thank You
+
+Thank you for visiting my portfolio! I hope you find it engaging and informative. If you have any questions or would like to connect, please don't hesitate to reach out.
