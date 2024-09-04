@@ -19,7 +19,7 @@ interface ProjectCardProps {
 export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, demoUrl, skills }: ProjectCardProps) {
     return (
         <CardContainer className="inter-var">
-            <CardBody className="bg-black relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.8] border-black/[0.1] sm:w-[30rem] h-auto w-auto rounded-xl p-5 border text-white">
+            <CardBody className="bg-gray-900 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-gray-900 dark:border-white/[0.8] border-gray-900 sm:w-[30rem] h-auto w-auto rounded-xl p-5 border text-white">
                 <CardItem translateZ="60" className="w-full">
                     <AspectRatio ratio={16 / 9.4} className="bg-muted">
                         <Image
@@ -40,7 +40,7 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
                 <CardItem
                     as="p"
                     translateZ="70"
-                    className="text-sm text-muted-foreground"
+                    className="text-sm text-gray-400"
                 >
                     {type}
                 </CardItem>
@@ -57,7 +57,7 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
                         className="flex gap-2 flex-wrap mt-6"
                     >
                         {skills.map((skill) => (
-                            <Badge key={skill} variant="default">{skill}</Badge>
+                            <Badge key={skill} variant="default" className="text-white">{skill}</Badge>
                         ))}
                     </CardItem>
                 )}
@@ -67,11 +67,10 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
                             translateZ={40}
                         >
                             <Link href={githubUrl} target="_blank" passHref>
-                            <Button className="bg-white text-black hover:bg-gray-200">
-                                Open Github
-                                <ExternalLink className="ml-2" />
-                            </Button>
-
+                                <Button className="bg-white text-black hover:bg-gray-200">
+                                    Open Github
+                                    <ExternalLink className="ml-2" />
+                                </Button>
                             </Link>
                         </CardItem>
                     )}
@@ -90,5 +89,5 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
                 </div>
             </CardBody>
         </CardContainer>
-    )
+    );
 }
