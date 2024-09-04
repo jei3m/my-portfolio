@@ -1,0 +1,95 @@
+[
+    {
+        "title": "Jeiemdocs",
+        "description": "A full-stack document editor website built with React JS for the frontend and Firebase for the backend.",
+        "type": "Personal Project",
+        "imageUrl": "/assets/img/reactdocs.png",
+        "githubUrl": "https://github.com/jei3m/react-docs",
+        "demoUrl": "",
+        "skills": [
+            "React JS",
+            "Firebase",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ]
+    },
+
+    {
+        "title": "Pogi Typings Generator",
+        "description": "A React JS-based website integrated with Gemini AI to automatically correct punctuation and spelling.",
+        "type": "Personal Project",
+        "imageUrl": "/assets/img/pogitypings.png",
+        "githubUrl": "https://github.com/jei3m/pogi-typings",
+        "demoUrl": "https://pogi-typings.vercel.app",
+        "skills": [
+            "React JS",
+            "Gemini AI",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ]
+    },
+    
+    {
+        "title": "SHOPZADA",
+        "description": "A full-stack eCommerce project using React JS and Django REST framework, and integrated with Paypal API.",
+        "type": "School Project",
+        "imageUrl": "/assets/img/shopzada.png",
+        "githubUrl": "https://github.com/jei3m/SHOPZADA/tree/main",
+        "demoUrl": "",
+        "skills": [
+            "React JS",
+            "Paypal API",
+            "JavaScript",
+            "Python",
+            "HTML",
+            "CSS"
+        ]
+    },
+
+        {
+        "title": "About Me",
+        "description": "A personal website I created for a Software Development course in my 3rd year of college, using HTML and CSS.",
+        "type": "School Project",
+        "imageUrl": "/assets/img/aboutme.png",
+        "githubUrl": "https://github.com/jei3m/SDEV_Experiment-4/tree/main",
+        "demoUrl": "https://aboutjm.vercel.app",
+        "skills": [
+            "HTML",
+            "CSS"
+        ]
+    },
+
+    {
+        "title": "AI-Ponics",
+        "description": "A thesis project website under development, built with React JS. It integrates Blynk API for sensor monitoring and Gemini AI for plant image detection.",
+        "type": "School Project",
+        "imageUrl": "/assets/img/aiponics.png",
+        "githubUrl": "https://github.com/jei3m/ai-ponics",
+        "demoUrl": "https://ai-ponics.vercel.app",
+        "skills": [
+            "React JS",
+            "Gemini AI",
+            "Blynk API",
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ]
+    },
+
+    {
+        "title": "CYD Marauder",
+        "description": "A GitHub repository focused on porting Marauder firmware, which is used for wireless network analysis and penetration testing, to an ESP32 devboard with an onboard display.",
+        "type": "Personal Project",
+        "imageUrl": "/assets/img/cyd.png",
+        "githubUrl": "https://github.com/jei3m/cyd-marauder",
+        "demoUrl": "",
+        "skills": [
+            "C++",
+            "C"
+        ]
+    }
+
+    
+]
