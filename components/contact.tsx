@@ -30,7 +30,7 @@ export default function Contact() {
           <br />
           <br />
           <div className="bg-gray-900 rounded-lg overflow-hidden p-4 sm:p-6 md:p-8 shadow-card-animation flex flex-col items-center w-full border border-white">
-            <div className="w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 relative mb-4">
+           <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 relative mb-4">
               <Image
                 src={images[currentImage - 1]}
                 alt="Profile"
