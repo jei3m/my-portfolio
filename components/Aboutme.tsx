@@ -34,7 +34,7 @@ export default function Aboutme() {
         />
       </Head>
 
-      <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif", color: 'white' }} className="text-4xl font-extrabold tracking-tight lg:text-5xl text-center w-full mb-4">
+      <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif", color: 'white' }} className="text-4xl font-extrabold tracking-tight lg:text-5xl text-center w-full">
         Capabilities
       </h2>
        <FeaturesSectionDemo/>
