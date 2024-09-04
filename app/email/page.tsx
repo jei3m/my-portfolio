@@ -61,7 +61,7 @@ const Email = () => {
   };
 
   return (
-    <>
+    <div className="dark:bg-black dark: bg-grid-white/[0.1]">
       <Header/>
       <Script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" strategy="beforeInteractive" />
       <div className="flex flex-col min-h-screen items-center justify-center text-gray-900 w-full dark:bg-black dark:bg-grid-white/[0.1]" style={{ fontFamily: '"Space Grotesk", "Noto Sans", sans-serif' }}>
@@ -123,7 +123,7 @@ const Email = () => {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
