@@ -64,7 +64,7 @@ const Email = () => {
     <>
       <Header/>
       <Script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" strategy="beforeInteractive" />
-      <div className="flex flex-col min-h-screen items-center justify-center bg-gray-100 text-gray-900 w-full dark:bg-black bg-black dark:bg-grid-white/[0.1]" style={{ fontFamily: '"Space Grotesk", "Noto Sans", sans-serif' }}>
+      <div className="flex flex-col min-h-screen items-center justify-center text-gray-900 w-full dark:bg-black dark: bg-grid-white/[0.1]" style={{ fontFamily: '"Space Grotesk", "Noto Sans", sans-serif' }}>
         <div className="bg-white shadow-lg rounded-lg p-8 w-[90%] h-[80vh] max-w-3xl mx-auto overflow-y-auto">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-gray-900 text-3xl font-bold">Send me an email</h2>
