@@ -5,7 +5,7 @@
         "type": "Personal Project",
         "imageUrl": "/assets/img/reactdocs.png",
         "githubUrl": "https://github.com/jei3m/react-docs",
-        "demoUrl": "",
+        "demoUrl": "https://jeiem-docs.netlify.app/home",
         "skills": [
             "React JS",
             "Firebase",
