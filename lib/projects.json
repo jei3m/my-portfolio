@@ -67,7 +67,7 @@
         "type": "School Project",
         "imageUrl": "/assets/img/aiponics.png",
         "githubUrl": "https://github.com/jei3m/ai-ponics",
-        "demoUrl": "https://ai-ponics.vercel.app",
+        "demoUrl": "https://ai-ponics.netlify.app",
         "skills": [
             "React JS",
             "Gemini AI",
