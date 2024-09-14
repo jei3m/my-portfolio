@@ -1,14 +1,15 @@
 [
     {
-        "title": "Jeiemdocs",
+        "title": "ScribeAI",
         "description": "A full-stack document editor website built with React JS, Firebase, and Gemini AI.",
         "type": "Personal Project",
         "imageUrl": "/assets/img/scribeai.png",
-        "githubUrl": "https://github.com/jei3m/react-docs",
-        "demoUrl": "https://jeiem-docs.netlify.app/home",
+        "githubUrl": "https://github.com/jei3m/scribe-ai",
+        "demoUrl": "https://ai-scribe.netlify.app",
         "skills": [
             "React JS",
             "Firebase",
+            "Gemini AI",
             "JavaScript",
             "HTML",
             "CSS"
