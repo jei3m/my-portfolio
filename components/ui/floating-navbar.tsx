@@ -78,8 +78,8 @@ export const FloatingNav = ({
           </Link>
         ))}
         <button className="border text-sm font-medium relative border-neutral-200/[0.4] text-neutral-200 px-4 py-2 rounded-full">
-          <a href="#contacts">
-          <span> Résumé</span></a>
+          <a href="/opencv">
+          <span>Open CV</span></a>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
         </button>
       </motion.div>

@@ -65,7 +65,7 @@ export default function Contact() {
               If you&apos;d like to contact me, feel free to reach out on my socials!
               <br/><br/>
               <div className="text-center">
-                <a href="#contacts">
+                <a href="/opencv">
                   <Button 
                     color="secondary" 
                     size="md" 
