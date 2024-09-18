@@ -2,15 +2,10 @@
 import React from 'react';
 import Head from 'next/head';
 import Header from '@/components/Header';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 const CVPage = () => {
-    const router = useRouter();
 
-    const handleBackClick = () => {
-      router.push('/home');
-    };
   return (
     
     <div className="p-6 flex flex-col overflow-x-hidden overflow-hidden w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
