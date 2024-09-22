@@ -72,7 +72,7 @@ export default function Contact() {
                     variant="ghost" 
                     style={{ color: "white", borderColor: "white", transition: "all 0.3s ease-in-out" }}
                   >
-                    Résumé
+                    Open CV
                   </Button>
                 </a>
               </div>
