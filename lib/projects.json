@@ -32,7 +32,7 @@
 
     {
         "title": "AI-Ponics",
-        "description": "A thesis project website under development, built with React JS. It integrates Blynk API for sensor monitoring and Gemini AI for plant image detection.",
+        "description": "A thesis project website under development, built with React JS. It integrates Blynk API and Gemini AI.",
         "type": "School Project",
         "imageUrl": "/assets/img/aiponics.png",
         "githubUrl": "https://github.com/jei3m/ai-ponics",
@@ -41,7 +41,7 @@
             "React JS",
             "Gemini AI",
             "Blynk API",
-            "JavaScript",
+            "Firebase",
             "HTML & CSS"
         ]
     },
