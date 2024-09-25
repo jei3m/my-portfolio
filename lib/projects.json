@@ -20,8 +20,8 @@
         "description": "A Next JS-based website integrated with Llama 405B to create React components with prompts.",
         "type": "Personal Project",
         "imageUrl": "/assets/img/aicoder.png",
-        "githubUrl": "https://github.com/jei3m/pogi-typings",
-        "demoUrl": "https://pogi-typings.vercel.app",
+        "githubUrl": "https://github.com/jei3m/ai-coder",
+        "demoUrl": "https://ai-coder-llama.vercel.app",
         "skills": [
             "Next JS",
             "Llama 405B",
