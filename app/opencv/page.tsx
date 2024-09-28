@@ -27,7 +27,7 @@ const CVPage = () => {
         <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-3xl">
           <div className="relative w-full" style={{ paddingBottom: "141.4%" }}>
             <iframe
-              src="https://drive.google.com/file/d/1KvU2TYSmUt4sANqhH9ulIhc4UPZpw0R4/preview" 
+              src="https://drive.google.com/file/d/1-x7_I7pG3Hz_rN8Y5HqavvgJ9jHKLWBC/preview" 
               className="absolute top-0 left-0 w-full h-full"
               allow="autoplay"
             ></iframe>
