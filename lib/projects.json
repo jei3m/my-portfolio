@@ -21,7 +21,7 @@
         "type": "Personal Project",
         "imageUrl": "/assets/img/aicoder.png",
         "githubUrl": "https://github.com/jei3m/ai-coder",
-        "demoUrl": "https://ai-coder-llama.vercel.app",
+        "demoUrl": "https://ai-coder-llama.netlify.app",
         "skills": [
             "Next JS",
             "Llama 405B",
