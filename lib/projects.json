@@ -75,7 +75,7 @@
 
     {
         "title": "CYD Marauder",
-        "description": "A GitHub repository focused on porting Marauder firmware, which is used for wireless network analysis and penetration testing, to an ESP32 devboard with an onboard display.",
+        "description": "A GitHub repository focused on porting Marauder firmware to an ESP32 devboard with an onboard display.",
         "type": "Personal Project",
         "imageUrl": "/assets/img/cyd.png",
         "githubUrl": "https://github.com/jei3m/cyd-marauder",
