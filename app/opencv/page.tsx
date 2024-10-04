@@ -1,10 +1,19 @@
 "use client";
-import React from 'react';
+import React, { useRef } from 'react';
 import Head from 'next/head';
 import Header from '@/components/Header';
-import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const CVPage = () => {
+  const downloadRef = useRef<HTMLAnchorElement>(null);
+
+  const handleDownload = () => {
+    if (downloadRef.current) {
+      downloadRef.current.click();
+    }
+  };
+
   return (
     <div className="p-6 flex flex-col overflow-x-hidden overflow-hidden w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
       <Header />
@@ -19,7 +28,7 @@ const CVPage = () => {
         <h2
           id="experience"
           style={{ fontFamily: "DM Serif Display, serif", color: "white" }}
-          className="scroll-m-20 font-extrabold tracking-tight text-4xl lg:text-4xl lg:text-5xl text-center w-full z-20"
+          className="scroll-m-20 font-extrabold tracking-tight text-3xl lg:text-4xl lg:text-5xl sm:text-4xl text-center w-full z-20"
         >
           My Curriculum Vitae
         </h2>
@@ -27,14 +36,14 @@ const CVPage = () => {
         <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-3xl">
           <div className="relative w-full" style={{ paddingBottom: "141.4%" }}>
             <iframe
-              src="https://drive.google.com/file/d/1-x7_I7pG3Hz_rN8Y5HqavvgJ9jHKLWBC/preview" 
+              src="https://drive.google.com/file/d/1Z26ZeU7EK-BiPP8ftuZHk4ptH84pq3IP/preview" 
               className="absolute top-0 left-0 w-full h-full"
               allow="autoplay"
             ></iframe>
           </div>
         </div>
         <br />
-        <p className="mt-4 text-center text-white">
+        <p className="mt-4 text-center text-white mb-3">
           If the CV doesn&apos;t load, please{' '}
           <a
             href="https://drive.google.com/file/d/1-x7_I7pG3Hz_rN8Y5HqavvgJ9jHKLWBC/view?usp=sharing"
@@ -46,16 +55,22 @@ const CVPage = () => {
           </a>{' '}
           to view it directly.
         </p>
-        <br />
-        <Link href="/home">
+        <div className="flex flex-wrap justify-center gap-4">
           <button
-            className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="px-6 py-2 bg-white text-black rounded-lg hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            onClick={handleDownload}
           >
-            Back to Home
+            <FontAwesomeIcon icon={faDownload} className="mr-2" />
+            Download CV
           </button>
-        </Link>
+          <a
+            ref={downloadRef}
+            href="/Reyes_Justin_Miguel_CV.pdf" 
+            download="Reyes_Justin_Miguel_CV.pdf" 
+            style={{ display: 'none' }}
+          />
+        </div>
       </main>
-      <br /><br /><br /><br /><br /><br />
     </div>
   );
 };
