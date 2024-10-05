@@ -34,7 +34,7 @@
         "title": "AI-Ponics",
         "description": "A thesis project website under development, built with React JS. It integrates Blynk API and Gemini AI.",
         "type": "School Project",
-        "imageUrl": "/assets/img/aiponics.png",
+        "imageUrl": "/assets/img/aiponics2.png",
         "githubUrl": "https://github.com/jei3m/ai-ponics",
         "demoUrl": "https://ai-ponics.netlify.app",
         "skills": [

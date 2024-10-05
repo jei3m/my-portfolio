@@ -6,7 +6,7 @@ import Head from "next/head";
 
 export default function Projects() {
     return (
-        <div className="p-8 flex flex-col overflow-x-hidden overflow-hidden w-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
+        <div className="p-8 flex flex-col overflow-x-hidden overflow-hidden w-full bg-black bg-grid-white/[0.1] relative flex items-center justify-center">
 
         <section id="projects" className="flex flex-col items-center justify-center">
     
