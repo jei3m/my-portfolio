@@ -40,10 +40,11 @@
         "title": "4th Year College",
         "company": "• Holy Angel University",
         "date": "2024-2025",
-        "description": "As of this very moment, I am working on personal projects, studying programming languages, and diving deeper into technology. My fascination with electronics started with the ESP32 Marauder project, where I successfully ported and flashed firmware to an ESP32 development board. This experience fueled my interest in exploring various microcontrollers and development boards. Currently, I'm also focused on learning more about AI, specifically through tools like Gemini AI, while continuing to work with Firebase for application development. I'm always invested in learning all things about tech and applying them in the very projects I will work on in the future.",
+        "description": "As of this very moment, I am working on personal projects, studying programming languages, and diving deeper into technology. My fascination with electronics started with the ESP32 Marauder project, where I successfully ported and flashed firmware to an ESP32 development board. This experience fueled my interest in exploring various microcontrollers and development boards. Currently, I'm also focused on learning more about AI, specifically through tools like Gemini AI, various API inferences, and also local models from Ollama. I'm always invested in learning all things about tech and applying them in the very projects I will work on in the future.",
         "skills": [
             "NextJS",
             "Gemini AI",
+            "Ollama",
             "Firebase",
             "Tailwind CSS",
             "ESP32",
