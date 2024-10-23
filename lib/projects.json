@@ -47,6 +47,20 @@
     },
 
     {
+        "title": "Ollama Chat",
+        "description": "A Next JS-based project that serves as a UI for Ollama models.",
+        "type": "Personal Project",
+        "imageUrl": "/assets/img/OllamaChat.png",
+        "githubUrl": "https://github.com/jei3m/ollama-chat",
+        "skills": [
+            "Next JS",
+            "Ollama",
+            "TypeScript",
+            "Tailwind CSS"
+        ]
+    },
+
+    {
         "title": "Pogi Typings Generator",
         "description": "A React JS-based website integrated with Gemini AI to automatically correct punctuation and spelling.",
         "type": "Personal Project",
@@ -71,20 +85,6 @@
         "skills": [
             "HTML & CSS"
         ]
-    },
-
-    {
-        "title": "CYD Marauder",
-        "description": "A GitHub repository focused on porting Marauder firmware to an ESP32 devboard with an onboard display.",
-        "type": "Personal Project",
-        "imageUrl": "/assets/img/cyd.png",
-        "githubUrl": "https://github.com/jei3m/cyd-marauder",
-        "demoUrl": "",
-        "skills": [
-            "C++",
-            "C"
-        ]
     }
-
     
 ]
