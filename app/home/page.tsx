@@ -13,6 +13,7 @@ export default function Home() {
     <div className="bg-black flex flex-col overflow-x-hidden overflow-hidden">
       <Header />
       <Experiences />
+      <Separator />
       <Projects />
       <Separator />
       <Aboutme />
