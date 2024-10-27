@@ -7,7 +7,7 @@ export default function Header() {
   const navItems = [
     {
       name: "Home",
-      link: "/",
+      link: "/home",
       icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
