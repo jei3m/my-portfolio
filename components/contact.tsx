@@ -17,7 +17,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="p-8 flex flex-col overflow-x-hidden overflow-hidden w-full dark:bg-black dark: bg-grid-white/[0.1] relative flex items-center justify-center">
+    <div className="p-4 flex flex-col overflow-x-hidden overflow-hidden w-full dark:bg-black dark: bg-grid-white/[0.1] relative flex items-center justify-center">
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
@@ -26,7 +26,7 @@ export default function Contact() {
       </Head>
       <div className="flex justify-center items-center min-h-screen p-4 sm:p-6 md:p-8">
         <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl">
-          <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif" }} className="mb-1 font-extrabold tracking-tight text-4xl lg:text-5xl text-center w-full z-80">
+          <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif" }} className="mb-[-10px] font-extrabold tracking-tight text-4xl lg:text-4xl text-center w-full z-80">
             Contact Me
           </h2>
           <br />
@@ -44,7 +44,7 @@ export default function Contact() {
             </div>
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">Justin Miguel Reyes</h1>
             <p className="text-xs sm:text-sm md:text-base font-bold text-white mb-4">BsCpE Student</p>
-            <div className="flex flex-wrap justify-center items-center mb-4 text-white text-lg sm:text-xl md:text-2xl" style={{ marginLeft: '1rem' }}>
+            <div className="flex flex-wrap justify-center items-center mb-4 text-white text-lg sm:text-xl md:text-3xl" style={{ marginLeft: '1rem' }}>
               <a href="/email" className="flex justify-center items-center mb-2 mr-4">
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
@@ -78,7 +78,7 @@ export default function Contact() {
                     
                     <div className="relative flex items-center gap-2 text-zinc-100">
                       <span className="text-base font-medium">Open CV</span>
-                      <Sparkles className="w-4 h-4 text-purple-400 group-hover:text-purple-300 transition-colors duration-300" />
+                      <Sparkles className="w-4 h-4 text-white group-hover:text-purple-300 transition-colors duration-300" />
                     </div>
                     
                     {/* Animated highlight */}

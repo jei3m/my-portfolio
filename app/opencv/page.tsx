@@ -28,7 +28,7 @@ const CVPage = () => {
         <h2
           id="experience"
           style={{ fontFamily: "DM Serif Display, serif", color: "white" }}
-          className="scroll-m-20 font-extrabold tracking-tight text-3xl lg:text-4xl lg:text-5xl sm:text-4xl text-center w-full z-20"
+          className="scroll-m-20 font-extrabold tracking-tight text-3xl lg:text-4xl sm:text-4xl text-center w-full z-20"
         >
           My Curriculum Vitae
         </h2>
