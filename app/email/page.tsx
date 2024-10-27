@@ -61,7 +61,7 @@ const Email = () => {
   };
 
   return (
-    <div className="bg-black dark:bg-grid-white/[0.1]">
+    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full dark:bg-black dark: bg-grid-white/[0.1] relative flex items-center justify-center">
       <Script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" strategy="beforeInteractive" />
       <div className="overflow-x-hidden overflow-hidden w-full relative flex items-center justify-center min-h-screen" style={{ fontFamily: '"Space Grotesk", "Noto Sans", sans-serif' }}>
         <div className="p-8 w-[90%] h-[90vh] max-w-3xl mx-auto overflow-y-auto">
