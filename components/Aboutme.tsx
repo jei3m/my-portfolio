@@ -56,7 +56,7 @@ const features = [
 
 export default function aboutme() {
   return (
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="mt-16 flex justify-center items-center">
       <div className="max-w-[1050px] mx-auto">
         {/* Hero Section */}
         <section className="py-4 px-4">
