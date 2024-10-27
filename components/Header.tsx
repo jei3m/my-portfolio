@@ -8,12 +8,12 @@ export default function Header() {
     {
       name: "Home",
       link: "/home",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconHome className="h-5 w-5 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Email me",
       link: "/email",
-      icon: <IconMail className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconMail className="h-5 w-5 text-neutral-500 dark:text-white" />,
     },
     // {
     //   name: "Resume",
