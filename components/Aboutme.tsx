@@ -19,7 +19,7 @@ const capabilities = [
   },
   {
     title: "Versatile Skill Set",
-    description: "From coding to building computers, I quickly adapt to various roles and technologies, ensuring high-quality results..",
+    description: "From coding to building computers, I quickly adapt to various roles and technologies, ensuring high-quality results.",
     icon: MoveHorizontal,
   },
   {
@@ -29,7 +29,7 @@ const capabilities = [
   },
   {
     title: "Reliable Performance",
-    description: "Committed to delivering consistent and dependable results. My work is designed to stand up to rigorous demands.",
+    description: "Committed to delivering consistent and dependable results. My work is designed to keep up with demands.",
     icon: Shield,
   },
   {
