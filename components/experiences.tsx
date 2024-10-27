@@ -4,12 +4,10 @@ import Head from "next/head";
 
 export default function Experiences() {
   return (
-    <div
-      className="flex flex-col overflow-x-hidden overflow-hidden w-full dark:bg-black dark:bg-grid-white/[0.1] relative flex items-center justify-center"
-    >
+    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full mx-auto dark:bg-black dark:bg-grid-white/[0.1] relative flex items-center justify-center">
       <section
         id="experiences"
-        className="p-4 flex flex-col items-start justify-start gap-4 sm:py-32 sm:mx-24 md:mx-32 lg:mx-64 xl:mx-96 py-16 text-white"
+        className="p-4 w-full max-w-[1000px] flex flex-col items-start justify-start gap-4 sm:py-32 sm:mx-24 md:mx-32 lg:mx-64 xl:mx-96 py-16 text-white"
       >
         <Head>
           <link
@@ -21,12 +19,12 @@ export default function Experiences() {
         <h2
           id="experience"
           style={{ fontFamily: "'DM Serif Display', serif" }}
-          className="scroll-m-10 font-extrabold tracking-tight text-4xl lg:text-5xl text-center w-full z-80"
+          className="mb-1 font-extrabold tracking-tight text-4xl lg:text-5xl text-left w-full z-80"
         >
           College Experiences
         </h2>
 
-        <br />
+        
 
         <div className="flex flex-col gap-4">
           {experiences.map((experience) => (

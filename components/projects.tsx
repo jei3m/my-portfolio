@@ -6,7 +6,7 @@ import Head from "next/head";
 
 export default function Projects() {
     return (
-        <div className="p-8 flex flex-col overflow-x-hidden overflow-hidden w-full bg-black bg-grid-white/[0.1] relative flex items-center justify-center">
+        <div className="p-4 flex flex-col overflow-x-hidden overflow-hidden w-full bg-black bg-grid-white/[0.1] relative flex items-center justify-center">
 
         <section id="projects" className="flex flex-col items-center justify-center">
     
@@ -15,13 +15,12 @@ export default function Projects() {
                 href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
                 rel="stylesheet"
                 />
-                </Head>
+            </Head>
 
-            <br/><br/><br/>
             <h2
                 id="experience"
                 style={{ fontFamily: "'DM Serif Display', serif", color: 'white' }}
-                className="scroll-m-20 font-extrabold tracking-tight text-4xl lg:text-4xl lg:text-5xl text-center w-full z-20"
+                className="mb-1 font-extrabold tracking-tight text-4xl lg:text-5xl text-center w-full z-80"
                 >
                 My Projects
             </h2>

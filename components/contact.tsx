@@ -6,7 +6,9 @@ import "@/app/globals.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faFacebook, faInstagramSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { Button } from "@nextui-org/button";
+import { motion } from "framer-motion";
+import { Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export default function Contact() {
   const [currentImage, setCurrentImage] = useState(1);
@@ -24,7 +26,7 @@ export default function Contact() {
       </Head>
       <div className="flex justify-center items-center min-h-screen p-4 sm:p-6 md:p-8">
         <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl">
-          <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif" }} className="text-4xl font-extrabold tracking-tight lg:text-5xl text-white text-center w-full mb-4">
+          <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif" }} className="mb-1 font-extrabold tracking-tight text-4xl lg:text-5xl text-center w-full z-80">
             Contact Me
           </h2>
           <br />
@@ -65,16 +67,25 @@ export default function Contact() {
               If you&apos;d like to contact me, feel free to reach out on my socials!
               <br/><br/>
               <div className="text-center">
-                <a href="/opencv">
-                  <Button 
-                    color="secondary" 
-                    size="md" 
-                    variant="ghost" 
-                    style={{ color: "white", borderColor: "white", transition: "all 0.3s ease-in-out" }}
-                  >
-                    Open CV
-                  </Button>
-                </a>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1, duration: 0.8 }}
+              >
+                <Link href="/opencv">
+                <button className="group relative overflow-hidden rounded-full px-8 py-3 bg-white/20 hover:bg-white/10 border border-white transition-colors duration-300">                  {/* Button gradient border */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                    
+                    <div className="relative flex items-center gap-2 text-zinc-100">
+                      <span className="text-base font-medium">Open CV</span>
+                      <Sparkles className="w-4 h-4 text-purple-400 group-hover:text-purple-300 transition-colors duration-300" />
+                    </div>
+                    
+                    {/* Animated highlight */}
+                    <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000" />
+                  </button>
+                </Link>
+              </motion.div>
               </div>
             </div>
           </div>

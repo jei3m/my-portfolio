@@ -4,12 +4,7 @@ import Head from "next/head";
 import { FeaturesSectionDemo } from "./custom/FeaturesSectionDemo";
 
 const content = [
-  // {
-  //   title: "Introduction",
-  //   description:
-  //     "I'm a passionate and dedicated computer engineering student with a focus on creating both innovative software and hardware solutions. My experience spans multiple domains, from firmware installation to ESP32 devices, web development, computer building and troubleshooting, and also basic mobile device repair to common issues. I am continuously studying the current trends in both hardware and software development, and one day, I'll be working within those developments.",
-  //   bgColor: "bg-gray-900", // Dark gray background
-  // },
+
   {
     title: "Background",
     description:
