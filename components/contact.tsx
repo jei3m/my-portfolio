@@ -17,7 +17,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="p-4 flex flex-col overflow-x-hidden overflow-hidden w-full dark:bg-black dark: bg-grid-white/[0.1] relative flex items-center justify-center">
+    <div className="p-4 flex flex-col overflow-x-hidden overflow-hidden w-full relative flex items-center justify-center">
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
@@ -26,7 +26,7 @@ export default function Contact() {
       </Head>
       <div className="flex justify-center items-center min-h-screen p-4 sm:p-6 md:p-8">
         <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl">
-          <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif" }} className="mb-[-10px] font-extrabold tracking-tight text-4xl lg:text-4xl text-center w-full z-80">
+          <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif" }} className="mb-[-10px] font-extrabold tracking-tight text-white text-4xl lg:text-4xl text-center w-full z-80">
             Contact Me
           </h2>
           <br />

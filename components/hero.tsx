@@ -11,7 +11,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full dark:bg-black dark:bg-grid-white/[0.1] relative flex items-center justify-center">
+    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
 
       <Head>
         <link
@@ -41,7 +41,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="space-y-4"
+              className="space-y-2"
             >
               <h2 
                 className="text-2xl md:text-3xl font-light text-zinc-400"

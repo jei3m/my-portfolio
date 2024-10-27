@@ -10,15 +10,14 @@ const Aboutme = dynamic(() => import("@/components/Aboutme"));
 
 export default function Home() {
   return (
-    <div className="bg-black flex flex-col overflow-x-hidden overflow-hidden">
+    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
+    <div className="flex flex-col overflow-x-hidden overflow-hidden">
       <Header />
       <Experiences />
-      <Separator />
       <Projects />
-      <Separator />
       <Aboutme />
-      <Separator />
       <Contact />
+    </div>
     </div>
   );
 }
