@@ -64,7 +64,7 @@ export default function aboutme() {
           <h2
           id="experience"
           style={{ fontFamily: "'DM Serif Display', serif" }}
-          className="ml-[2px] mb-1 font-extrabold tracking-tight text-4xl lg:text-4xl text-left w-full z-80"
+          className="ml-[2px] mb-1 font-extrabold tracking-tight text-white text-4xl lg:text-4xl text-left w-full z-80"
         >
           Capabilities
         </h2>
