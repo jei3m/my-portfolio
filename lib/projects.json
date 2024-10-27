@@ -59,7 +59,7 @@
     },
 
     {
-        "title": "Pogi Typings Generator",
+        "title": "Pogi Typings",
         "description": "A React JS-based website integrated with Gemini AI to automatically correct punctuation and spelling.",
         "type": "Personal Project",
         "imageUrl": "/assets/img/pogitypings.png",
