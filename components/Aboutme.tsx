@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
-const features = [
+const capabilities = [
   {
     title: "Problem Solver",
     description: "I thrive on solving complex challenges with creative solutions. I always bring a fresh perspective to every problem.",
@@ -74,14 +74,14 @@ export default function aboutme() {
         {/* Features Grid */}
         <section className="px-4 pb-20">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-            {features.map((feature, index) => (
+            {capabilities.map((feature, index) => (
               <Card 
                 key={index} 
                 className="bg-gray-900 border-white"
               >
                 <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                  <div className="p-2 bg-purple-500/10 rounded-lg">
-                    <feature.icon className="w-6 h-6 text-white" />
+                  <div className="p-2 bg-white rounded-lg">
+                    <feature.icon className="w-6 h-6 text-black" />
                   </div>
                   <h3 className="text-xl font-semibold text-white">
                     {feature.title}

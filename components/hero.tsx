@@ -80,7 +80,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="mt-12"
+              className="mt-6"
             >
               <Link href="/home">
               <button className="group relative overflow-hidden rounded-full px-8 py-3 bg-white/20 hover:bg-white/10 border border-white transition-colors duration-300">                  {/* Button gradient border */}
