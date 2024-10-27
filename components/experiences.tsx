@@ -22,7 +22,7 @@ export default function Experiences() {
                 College Experiences
             </h2>
             <br/>
-            <div className="flex flex-col gap-4 md:hidden">
+            {/* <div className="flex flex-col gap-4 md:hidden">
                 {experiences.map((experience) => (
                     <ExperienceCard
                         key={experience.title}
@@ -33,7 +33,7 @@ export default function Experiences() {
                         skills={experience.skills}
                     />
                 ))}
-            </div>
+            </div> */}
              <div className="flex flex-col gap-4">
                     {experiences.map((experience) => (
                         <ExperienceCard
