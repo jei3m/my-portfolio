@@ -1,6 +1,6 @@
 ## My NextJs Portfolio
 
-This portfolio website is created using the [Next.js](https://nextjs.org/) framework, bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and incorporates components from Aceternity UI. The site is designed to effectively showcase my projects, demonstrate my skills, and provide multiple ways for visitors to connect with me.
+This portfolio website is created using the [Next.js](https://nextjs.org/) framework, bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). The site is designed to effectively showcase my projects, demonstrate my skills, and provide multiple ways for visitors to connect with me.
 
 ## Overview
 
