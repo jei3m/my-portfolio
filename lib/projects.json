@@ -46,7 +46,7 @@
 
     {
         "title": "Ollama Chat",
-        "description": "A Next JS-based project that serves as a UI for Ollama models.",
+        "description": "A Next JS-based project that serves as a UI for local Ollama models.",
         "type": "Personal Project",
         "imageUrl": "/assets/img/OllamaChat.png",
         "githubUrl": "https://github.com/jei3m/ollama-chat",
