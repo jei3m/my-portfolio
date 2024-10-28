@@ -15,21 +15,6 @@
     },
 
     {
-        "title": "AI Coder",
-        "description": "A Next JS-based website integrated with Llama 405B to create React components with prompts.",
-        "type": "Personal Project",
-        "imageUrl": "/assets/img/aicoder.png",
-        "githubUrl": "https://github.com/jei3m/ai-coder",
-        "demoUrl": "https://ai-coder-llama.netlify.app",
-        "skills": [
-            "Next JS",
-            "Llama 405B",
-            "TypeScript",
-            "Tailwind CSS"
-        ]
-    },
-
-    {
         "title": "AI-Ponics",
         "description": "A thesis project website under development, built with React JS. It integrates Blynk API and Gemini AI.",
         "type": "School Project",
@@ -41,6 +26,21 @@
             "Gemini AI",
             "Blynk API",
             "Firebase"
+        ]
+    },
+
+    {
+        "title": "AI Coder",
+        "description": "A Next JS-based website integrated with Llama 405B to create React components with prompts.",
+        "type": "Personal Project",
+        "imageUrl": "/assets/img/aicoder.png",
+        "githubUrl": "https://github.com/jei3m/ai-coder",
+        "demoUrl": "https://ai-coder-llama.netlify.app",
+        "skills": [
+            "Next JS",
+            "Llama 405B",
+            "TypeScript",
+            "Tailwind CSS"
         ]
     },
 
@@ -60,7 +60,7 @@
 
     {
         "title": "Pogi Typings",
-        "description": "A React JS-based website integrated with Gemini AI to automatically correct punctuation and spelling.",
+        "description": "A React JS-based website integrated with Gemini AI to correct punctuation and spelling while maintaining a Tagalog and English context.",
         "type": "Personal Project",
         "imageUrl": "/assets/img/pogitypings.png",
         "githubUrl": "https://github.com/jei3m/pogi-typings",
@@ -73,15 +73,41 @@
         ]
     },
 
-        {
+    {
+        "title": "Life Expectancy",
+        "description": "Final requirement for our Software Design Laboratory course. It utilizes data science algorithms to analyze and predict life expectancy at birth based on the dataset.",
+        "type": "School Project",
+        "imageUrl": "/assets/img/life.png",
+        "githubUrl": "https://github.com/jei3m/life-expectancy",
+        "skills": [
+            "Python",
+            "Data Science"
+        ]
+    },
+
+    {
+
         "title": "About Me",
-        "description": "A personal website I created for a Software Development course in my 3rd year of college, using HTML and CSS.",
+        "description": "A personal website I created for our Software Development course in my 3rd year of college, using HTML and CSS.",
         "type": "School Project",
         "imageUrl": "/assets/img/aboutme.png",
         "githubUrl": "https://github.com/jei3m/SDEV_Experiment-4/tree/main",
         "demoUrl": "https://aboutjm.vercel.app",
         "skills": [
             "HTML & CSS"
+        ]
+    },
+
+    {
+        
+        "title": "CYD Marauder",
+        "description": "A simple guide to installing ESP32 Marauder firmware from source onto your ESP32 Dev module.",
+        "type": "Personal Project",
+        "imageUrl": "/assets/img/cyd.png",
+        "githubUrl": "https://github.com/jei3m/cyd-marauder",
+        "skills": [
+            "ESP32",
+            "C++"
         ]
     }
     
