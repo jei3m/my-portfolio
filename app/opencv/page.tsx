@@ -16,7 +16,7 @@ const CVPage = () => {
 
   return (
     <div className="flex flex-col overflow-x-hidden overflow-y-auto min-h-screen bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
-    <div className="p-4 flex flex-col overflow-x-hidden overflow-hidden w-full h-full relative flex items-center justify-center">
+    <div className="p-5 flex flex-col overflow-x-hidden overflow-hidden w-full h-full relative flex items-center justify-center">
       <Header />
       <Head>
         <title>My CV</title>
@@ -34,7 +34,7 @@ const CVPage = () => {
         </h2>
         <br />
         <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-3xl">
-          <div className="relative w-full" style={{ paddingBottom: "141.4%" }}>
+          <div className="relative w-full h-full" style={{ paddingBottom: "141.4%" }}>
             <iframe
               src="https://drive.google.com/file/d/1Z26ZeU7EK-BiPP8ftuZHk4ptH84pq3IP/preview" 
               className="absolute top-0 left-0 w-full h-full"
@@ -43,7 +43,7 @@ const CVPage = () => {
           </div>
         </div>
         <br />
-        <p className="mt-2 text-center text-white mb-3">
+        <p className="text-center text-white mb-4">
           If the CV doesn&apos;t load, please{' '}
           <a
             href="https://drive.google.com/file/d/1-x7_I7pG3Hz_rN8Y5HqavvgJ9jHKLWBC/view?usp=sharing"
