@@ -56,7 +56,7 @@ const capabilities = [
 
 export default function aboutme() {
   return (
-    <div className="mt-12 flex justify-center items-center">
+    <div className="mt-14 flex justify-center items-center">
       <div className="max-w-[1050px] mx-auto">
         {/* Hero Section */}
         <section className="py-4 px-4">
