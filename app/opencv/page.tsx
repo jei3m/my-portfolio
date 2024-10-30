@@ -16,7 +16,7 @@ const CVPage = () => {
 
   return (
     <div className="flex flex-col overflow-x-hidden overflow-y-auto min-h-screen bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
-    <div className="p-6 flex flex-col overflow-x-hidden overflow-hidden w-full h-full relative flex items-center justify-center">
+    <div className="p-4 flex flex-col overflow-x-hidden overflow-hidden w-full h-full relative flex items-center justify-center">
       <Header />
       <Head>
         <title>My CV</title>
