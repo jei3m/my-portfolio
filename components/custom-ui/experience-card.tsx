@@ -1,6 +1,6 @@
 import { Reveal } from "./reveal";
-import { Badge } from "../ui/badge";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "./badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/custom-ui/card";
 
 interface ExperienceCardProps {
     title: string;

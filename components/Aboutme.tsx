@@ -9,7 +9,7 @@ import {
   Lightbulb,
   Sparkles
 } from 'lucide-react';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
+import { Card, CardHeader, CardContent } from '@/components/custom-ui/card';
 
 const capabilities = [
   {

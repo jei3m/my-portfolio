@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { Github, ExternalLink } from 'lucide-react';
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/custom-ui/card";
 import projects from '@/lib/projects.json';
 
 export default function ProjectsPage() {

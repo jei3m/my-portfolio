@@ -1,4 +1,4 @@
-import { ExperienceCard } from "./custom/experience-card";
+import { ExperienceCard } from "./custom-ui/experience-card";
 import experiences from '@/lib/experiences.json';
 import Head from "next/head";
 

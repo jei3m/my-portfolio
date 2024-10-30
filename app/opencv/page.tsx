@@ -15,16 +15,16 @@ const CVPage = () => {
   };
 
   return (
-    <div className="p-6 flex flex-col overflow-x-hidden overflow-hidden w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
+    <div className="flex flex-col overflow-x-hidden overflow-y-auto min-h-screen bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
+    <div className="p-6 flex flex-col overflow-x-hidden overflow-hidden w-full h-full relative flex items-center justify-center">
       <Header />
-      <br /><br /><br />
       <Head>
         <title>My CV</title>
         <meta name="description" content="View my professional CV" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <main className="flex-grow container mx-auto px-4 py-8 flex flex-col items-center">
+      <main className="flex-grow container mx-auto px-4 py-20 flex flex-col items-center">
         <h2
           id="experience"
           style={{ fontFamily: "DM Serif Display, serif", color: "white" }}
@@ -43,7 +43,7 @@ const CVPage = () => {
           </div>
         </div>
         <br />
-        <p className="mt-4 text-center text-white mb-3">
+        <p className="mt-2 text-center text-white mb-3">
           If the CV doesn&apos;t load, please{' '}
           <a
             href="https://drive.google.com/file/d/1-x7_I7pG3Hz_rN8Y5HqavvgJ9jHKLWBC/view?usp=sharing"
@@ -55,7 +55,7 @@ const CVPage = () => {
           </a>{' '}
           to view it directly.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center gap-4 mb-20">
           <button
             className="px-6 py-2 bg-white text-black rounded-lg hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             onClick={handleDownload}
@@ -71,6 +71,7 @@ const CVPage = () => {
           />
         </div>
       </main>
+    </div>
     </div>
   );
 };
