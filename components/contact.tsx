@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function Contact() {
   const [currentImage, setCurrentImage] = useState(1);
   const images = [
-    "/picofme1.png",
+    "/JustinMiguel.png",
   ];
 
   return (
@@ -26,19 +26,18 @@ export default function Contact() {
       </Head>
       <div className="flex justify-center items-center min-h-screen p-4 sm:p-6 md:p-8">
         <div className="relative w-full max-w-md sm:max-w-lg md:max-w-xl">
-          <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif" }} className="mb-[-10px] font-extrabold tracking-tight text-white text-4xl lg:text-4xl text-center w-full z-80">
+          <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif" }} className="mb-[40px] font-extrabold tracking-tight text-white text-4xl lg:text-4xl text-center w-full z-80">
             Contact Me
           </h2>
-          <br />
-          <br />
-          <div className="bg-gray-900 rounded-lg overflow-hidden p-4 sm:p-6 md:p-8 shadow-card-animation flex flex-col items-center w-full border border-white">
+
+          <div className="bg-gray-900 rounded-xl overflow-hidden p-4 sm:p-6 md:p-8 shadow-card-animation flex flex-col items-center w-full border border-white">
             <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 relative mb-4">
               <Image
                 src={images[currentImage - 1]}
                 alt="Profile"
                 fill
                 style={{ objectFit: 'cover' }}
-                className="rounded-full"
+                className="rounded-xl"
                 sizes="100vw"
               />
             </div>
