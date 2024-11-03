@@ -65,8 +65,8 @@ const CVPage = () => {
           </button>
           <a
             ref={downloadRef}
-            href="/Reyes_Justin_Miguel_CV.pdf" 
-            download="Reyes_Justin_Miguel_CV.pdf" 
+            href="/CV_Reyes,JustinMiguelB.pdf"
+            download="CV_Reyes,JustinMiguelB.pdf" 
             style={{ display: 'none' }}
           />
         </div>
