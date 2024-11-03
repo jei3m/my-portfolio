@@ -46,7 +46,7 @@ const CVPage = () => {
         <p className="text-center text-white mb-4">
           If the CV doesn&apos;t load, please{' '}
           <a
-            href="https://drive.google.com/file/d/1-x7_I7pG3Hz_rN8Y5HqavvgJ9jHKLWBC/view?usp=sharing"
+            href="https://drive.google.com/file/d/1UiTnnIj4jY54-4aKDCLcoHCOkSiaBblB/view?usp=sharing"
             className="text-blue-500 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
