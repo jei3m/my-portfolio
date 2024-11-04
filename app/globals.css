@@ -34,15 +34,6 @@ body {
   }
 }
 
-/* .hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.hide-scrollbar {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
-} */
-
 /* Custom CSS for shadow animation */
 @keyframes shadow-pulse {
   0% {
