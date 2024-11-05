@@ -31,12 +31,14 @@ const techStack = [
       'Utilizing utility-first CSS framework for rapid and consistent UI development.',
     icon: 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg',
   },
+
   {
-    title: 'Python',
+    title: 'Vite',
     description:
-      'Implementing machine learning algorithms for data analysis and predictive modeling.',
-    icon: 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg',
+      'Leveraging Vite for lightning-fast development server and optimized production builds.',
+    icon: 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg',
   },
+
   {
     title: 'JavaScript Ecosystem',
     description:
@@ -46,6 +48,14 @@ const techStack = [
       'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg',
     ],
   },
+
+  {
+    title: 'Python',
+    description:
+      'Implementing machine learning algorithms for data analysis and predictive modeling.',
+    icon: 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg',
+  },
+
   {
     title: 'Firebase & Supabase',
     description:
@@ -54,12 +64,6 @@ const techStack = [
       'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg',
       'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg',
     ],
-  },
-  {
-    title: 'Vite',
-    description:
-      'Leveraging Vite for lightning-fast development server and optimized production builds.',
-    icon: 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg',
   },
   {
     title: 'IoT Development',
