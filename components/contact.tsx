@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faFacebook, faInstagramSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
-import { File } from "lucide-react";
+import { FileText } from "lucide-react";
 import Link from "next/link";
 
 export default function Contact() {
@@ -77,7 +77,7 @@ export default function Contact() {
                     
                     <div className="relative flex items-center gap-2 text-zinc-100">
                       <span className="text-base font-medium">Open CV</span>
-                      <File className="w-4 h-4 text-white group-hover:text-purple-300 transition-colors duration-300" />
+                      <FileText className="w-4 h-4 text-white group-hover:text-purple-300 transition-colors duration-300" />
                     </div>
                     
                     {/* Animated highlight */}
