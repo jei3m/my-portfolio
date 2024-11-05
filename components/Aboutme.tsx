@@ -86,7 +86,7 @@ const techStack = [
 export default function TechStack() {
   return (
     <div className="mt-14 flex justify-center items-center">
-      <div className="max-w-[1050px] mx-auto">
+      <div className="max-w-[1000px] mx-auto">
         <section className="py-4 px-4">
           <div className="max-w-6xl mx-auto">
             <h2

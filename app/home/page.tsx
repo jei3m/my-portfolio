@@ -7,6 +7,7 @@ const Separator = dynamic(() => import("@/components/custom-ui/separator"));
 const Contact = dynamic(() => import("@/components/contact"));
 const Experiences = dynamic(() => import("@/components/experiences"));
 const Aboutme = dynamic(() => import("@/components/Aboutme"));
+const Profile= dynamic(() => import("@/components/Profile"));
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <Experiences />
       <Projects />
       <Aboutme />
-      <Contact />
+      <Profile/>
     </div>
     </div>
   );

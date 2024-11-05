@@ -1,5 +1,3 @@
-// components/projects.tsx
-
 import React from 'react';
 import Head from 'next/head';
 import { Github, ExternalLink } from 'lucide-react';
@@ -17,7 +15,7 @@ export default function ProjectsPage() {
         />
       </Head>
       <div className="flex flex-col overflow-x-hidden overflow-hidden w-full mx-auto relative flex items-center justify-center">
-        <div className="flex flex-col w-full max-w-[1050px]">
+        <div className="flex flex-col w-full max-w-[1000px]">
           <main className="max-w-7xl mx-auto px-4 py-2">
             <h2
               id="experience"
@@ -51,7 +49,7 @@ export default function ProjectsPage() {
                         <div className="space-y-3">
                           <div className="flex items-center justify-between">
                             <h2 className="text-2xl text-white font-bold">{project.title}</h2>
-                            <span className="text-sm px-3 py-2 bg-gray-800 text-gray-300 rounded-full">
+                            <span className="text-sm font-medium px-3 py-2 bg-gray-800 text-gray-300 rounded-full">
                               {project.type}
                             </span>
                           </div>
@@ -69,7 +67,7 @@ export default function ProjectsPage() {
                           {project.skills.map((skill, skillIndex) => (
                             <span
                               key={skillIndex}
-                              className="text-sm px-3 py-1 bg-white text-black rounded-xl"
+                              className="text-sm font-semibold px-3 py-1 bg-white text-black rounded-xl"
                             >
                               {skill}
                             </span>
@@ -82,7 +80,7 @@ export default function ProjectsPage() {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-3 text-base bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+                          className="flex items-center gap-3 text-base font-semibold bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
                         >
                           <Github size={20} />
                           Code
@@ -92,7 +90,7 @@ export default function ProjectsPage() {
                             href={project.demoUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-3 text-base bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors"
+                            className="flex items-center gap-3 text-base font-semibold bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors"
                           >
                             <ExternalLink size={20} />
                             Demo

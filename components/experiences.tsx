@@ -5,7 +5,7 @@ import Head from "next/head";
 export default function Experiences() {
   return (
     <div className="flex flex-col overflow-x-hidden overflow-hidden w-full relative flex items-center justify-center">
-      <div className="flex flex-col overflow-x-hidden overflow-hidden w-full max-w-[1044px] mx-auto relative flex items-center justify-center">
+      <div className="flex flex-col overflow-x-hidden overflow-hidden w-full max-w-[1000px] mx-auto relative flex items-center justify-center">
         <section
           id="experiences"
           className="p-4 w-full flex flex-col items-start justify-start gap-4 py-20 text-white"
