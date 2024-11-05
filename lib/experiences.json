@@ -39,7 +39,7 @@
     {
         "title": "4th Year College",
         "company": "• Holy Angel University",
-        "date": "2024-2025",
+        "date": "S.Y. 2024-Current",
         "description": "I’m currently expanding my portfolio with web-based projects, exploring programming languages, and expanding my knowledge in tech. My interest in electronics began with the ESP32 Marauder project, where I ported and flashed firmware onto an ESP32 board. Also recently, I completed a project using a Raspberry Pi to control LEDs with Siri voice commands for my Embedded Systems laboratory course. I also gained exposure to machine learning through Python notebooks, creating models from datasets. Now, I’m diving deeper into AI and its integrations via API inferences and also local models from Ollama. I'm currently building the AI-Ponics web app as part of our thesis.",
         "skills": [
             "NextJS",

@@ -66,13 +66,13 @@ export default function Hero() {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="mt-8 space-y-6"
             >
-              <p className="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed  mt-[-10px]">
-               He dreams big, aims high, and has goals to achieve.
+              <p className="text-lg md:text-xl text-zinc-400 max-w-xl mx-auto leading-relaxed  mt-[-10px]">
+               A Computer Engineering student who dreams big, aims high, and has goals to achieve.
               </p>
               
-              <div className="text-sm font-medium text-zinc-400 tracking-wide">
+              {/* <div className="text-sm font-medium text-zinc-400 tracking-wide">
                 A PORTFOLIO SHOWCASE WITH NEXT.JS
-              </div>
+              </div> */}
             </motion.div>
 
             {/* CTA Button */}

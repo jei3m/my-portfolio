@@ -60,7 +60,7 @@ export default function Contact() {
                 <FontAwesomeIcon icon={faInstagramSquare} />
               </a>
             </div>
-            <div className="text-sm sm:text-sm md:text-base text-white text-center">
+            <div className="text-sm sm:text-lg md:text-lg text-white text-center">
               <p>+63 985-184-5658</p>
               <br/>
               If you&apos;d like to contact me, feel free to reach out on my socials!
