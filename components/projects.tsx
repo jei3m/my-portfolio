@@ -30,6 +30,7 @@ export default function ProjectsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               {projects.map((project, index) => (
                 <Reveal
+                  key={index}
                   initial={{ opacity: 0, x: -50 }}
                   whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                 >
