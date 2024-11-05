@@ -12,6 +12,10 @@ interface ExperienceCardProps {
 
 export function ExperienceCard({ title, company, date, description, skills }: ExperienceCardProps) {
     return (
+        <Reveal
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
+    >
         <Card className="w-full bg-gray-900">
             <Reveal
                 initial={{ opacity: 0, y: -50 }}
@@ -25,7 +29,7 @@ export function ExperienceCard({ title, company, date, description, skills }: Ex
             <CardContent className="flex flex-col gap-4">
                 <Reveal
                     initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
+                    whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
                 >
                     <p className="leading-7">{description}</p>
                 </Reveal>
@@ -44,5 +48,6 @@ export function ExperienceCard({ title, company, date, description, skills }: Ex
                 )}
             </CardContent>
         </Card>
+        </Reveal>
     )
 }
