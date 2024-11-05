@@ -4,7 +4,7 @@ This portfolio website is created using the [Next.js](https://nextjs.org/) frame
 
 ## Overview
 
-This portfolio website is structured to highlight various aspects of my professional work and expertise. It is built to be responsive, engaging, and informative, offering a comprehensive view of my capabilities as a student developer.
+This portfolio website is designed to showcase different aspects of my college life and the projects I’ve created. It’s built to be responsive, engaging, and informative, providing a comprehensive view of my abilities as a student developer.
 
 ## Getting Started
 
