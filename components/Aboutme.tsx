@@ -103,14 +103,14 @@ export default function TechStack() {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
               >
-                <Card className="bg-gray-900 border-white hover:border-blue-500 transition-all duration-300">
+                <Card className="bg-gray-900 border-white hover:border-blue-500 hover:scale-105 transition-all duration-300">
                 <Reveal
                 key={index}
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
               >
                   <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                    <div className="flex gap-2 bg-white/5 p-3 rounded-lg">
+                    <div className="flex gap-2 bg-gray-800 p-3 rounded-lg">
                       {tech.isLucideIcon ? (
                         <tech.LucideIcon className="w-6 h-6 text-white" />
                       ) : tech.icons ? (
