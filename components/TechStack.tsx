@@ -3,6 +3,8 @@ import { Brain } from 'lucide-react';
 import { Card, CardHeader, CardContent } from '@/components/custom-ui/card';
 import { Reveal } from './custom-ui/reveal';
 import techStackData from '@/lib/techData.json'; 
+import Image from 'next/image';
+import Head from "next/head";
 
 interface TechStackItem {
   title: string;
@@ -24,6 +26,12 @@ const TechStack: React.FC = () => {
       <div className="max-w-[900px] mx-auto">
         <section className="py-4 px-4">
           <div className="max-w-6xl mx-auto">
+            <Head>
+                <link
+                href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+                rel="stylesheet"
+                />
+            </Head>
             <h2
               id="techstack"
               style={{ fontFamily: "'DM Serif Display', serif" }}
@@ -54,18 +62,22 @@ const TechStack: React.FC = () => {
                           <tech.LucideIcon className="w-6 h-6 text-white" />
                         ) : tech.icons ? (
                           tech.icons.map((icon, i) => (
-                            <img
+                            <Image
                               key={i}
                               src={icon}
                               alt={`${tech.title} icon ${i + 1}`}
                               className="w-6 h-6"
+                              width={20}
+                              height={20}
                             />
                           ))
                         ) : (
-                          <img
-                            src={tech.icon}
+                          <Image
+                            src={tech.icon!}
                             alt={`${tech.title} icon`}
                             className="w-6 h-6"
+                            width={20}
+                            height={20}
                           />
                         )}
                       </div>

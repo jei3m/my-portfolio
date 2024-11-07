@@ -5,19 +5,21 @@ const Hero = dynamic(() => import("@/components/hero"));
 const Projects = dynamic(() => import("@/components/projects"));
 const Separator = dynamic(() => import("@/components/custom-ui/separator"));
 const Contact = dynamic(() => import("@/components/contact"));
-const Experiences = dynamic(() => import("@/components/experiences"));
+const Experiences = dynamic(() => import("@/components/Education"));
 const Aboutme = dynamic(() => import("@/components/TechStack"));
+const ProfileCard= dynamic(() => import("@/components/ProfileCard"));
 const Profile= dynamic(() => import("@/components/Profile"));
 
 export default function Home() {
   return (
-    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
-    <div className="flex flex-col overflow-x-hidden overflow-hidden">
+    <div className="flex flex-col w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
+    <div className="flex flex-col">
       <Header />
+      {/* <Profile/> */}
+      <ProfileCard/>
       <Experiences />
       <Projects />
       <Aboutme />
-      <Profile/>
     </div>
     </div>
   );

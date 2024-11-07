@@ -1,84 +1,100 @@
-"use client"
-import { Circle, Github, Linkedin, Mail, MapPin, Instagram, Facebook, FileText } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+"use client";
+import { Calendar, FileText, Github, Linkedin, Mail, Facebook, Instagram, Twitter } from "lucide-react";
+import { Button } from "./custom-ui/button"
 import { motion } from "framer-motion"
+import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faFacebook, faInstagramSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FaEnvelope} from "react-icons/fa6"
+import { Instrument_Sans } from "next/font/google";
 
 export default function Profile() {
+  const socialLinks = [
+    { 
+        icon: Mail, 
+        href: "/email",
+        label: "Email", 
+        title: "Contact" 
+      },
+    { 
+      icon: Github, 
+      href: "https://github.com/jei3m",
+      label: "GitHub",
+      title: "View Projects" 
+    },
+    { 
+        icon: Facebook, 
+        href: "https://www.facebook.com/justinmiguel.reyes/",
+        label: "Calendar", 
+        title: "Schedule" 
+      },
+    { 
+      icon: Linkedin, 
+      href: "https://www.linkedin.com/in/justin-miguel-reyes-175323327/",
+      label: "LinkedIn", 
+      title: "Connect" 
+    },
+
+    { 
+      icon: Instagram, 
+      href: "https://www.instagram.com/_justinmiguel/",
+      label: "Resume", 
+      title: "Download CV" 
+    }
+  ];
+
   return (
-    <div className="min-h-screen text-white flex flex-col items-center justify-center p-4">
-        <h2 id="experience" style={{ fontFamily: "'DM Serif Display', serif" }} className="mb-[30px] font-extrabold tracking-tight text-white text-4xl lg:text-4xl text-center w-full z-80">
-            Contact Me
-        </h2>
-      <div className="shadow-card-animation max-w-3xl w-full bg-gray-800 rounded-lg shadow-xl overflow-hidden border border-white">
-        <div className="md:flex items-center">
-          <div className="md:flex-shrink-0 flex justify-center p-4 md:p-8">
-          <div className="relative w-40 h-40 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-sm-30">
-              <Image
-                className="rounded-lg object-cover"
+    <div className="min-h-screen text-white relative py-20 md:py-40">
+      <div className="relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-8 sm:pt-12 pb-16 sm:pb-24">
+          <div className="grid md:grid-cols-[300px,1fr] lg:grid-cols-[400px,1fr] gap-8 lg:gap-12 items-start md:items-center">
+            {/* Profile Image */}
+            <div className="relative aspect-square rounded-3xl overflow-hidden max-w-[300px] md:max-w-full mx-auto">
+              <img
                 src="/JustinMiguel.png"
-                alt="Profile picture"
-                fill
+                alt="Justin Miguel"
+                className="object-cover w-full h-full"
+                loading="eager"
               />
             </div>
-          </div>
-          <div className="p-8 flex-grow">
-            <h1 className="text-3xl leading-8 font-bold tracking-tight text-white sm:text-4xl">
-              Justin Miguel
-            </h1>
-            <p className="mt-2 text-gray-400 flex items-center">
-              <MapPin className="h-5 w-5 mr-2" />
-              Floridablanca, PH
-            </p>
-            <p className="mt-4 text-lg text-gray-300">
-              A Computer Engineering student and tech enthusiast with a foundation in web development, IoT, and IT.
-            </p>
-            <div className="mt-6 flex space-x-4">
-              <Link href="/email" className="text-gray-300 hover:text-white transition-colors">
-                <FaEnvelope className="h-7 w-7 mt-[-1px]" />
-              </Link>
-              <a
-                href="https://www.facebook.com/justinmiguel.reyes/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
-              </a>
-              <a
-                href="https://github.com/jei3m"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                <FontAwesomeIcon icon={faGithub} className="h-6 w-6" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/justin-miguel-reyes-175323327/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6" />
-              </a>
-              <a
-                href="https://www.instagram.com/_justinmiguel/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-              <FontAwesomeIcon icon={faInstagramSquare} className="h-6 w-6" />
-              </a>
-            </div>
-            <div className="mt-4 flex items-center justify-between">
-              <div className="flex items-center space-x-2">
-                <Circle className="h-3 w-3 text-green-400 fill-current" />
-                <span className="text-sm text-gray-300">Ready to connect</span>
+
+            {/* Text Content */}
+            <div className="space-y-6 md:space-y-8 text-center md:text-left">
+              <div className="space-y-3 md:space-y-4">
+                <h3 className="text-2xl font-bold sm:text-2xl text-gray-200 mb-[-10px]">
+                  Hello, I&apos;m Justin Miguel<span className="text-3xl">👋</span>
+                </h3>
+                <div className="space-y-2">
+                  <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+                    A Computer Engineering Student &{' '}
+                    <span className="text-[#8B5CF6]">Tech Enthusiast</span>
+                  </h1>
+                  <p className="text-gray-300 text-md  mt-4 max-w-2xl">
+                    With a foundation in Web Development, IoT Solutions, and IT.
+                  </p>
+                </div>
               </div>
-              
+
+              {/* Social Links */}
+              <div className="flex gap-3 justify-center md:justify-start">
+                {socialLinks.map((item, index) => (
+                  <Link 
+                    key={index} 
+                    href={item.href}
+                    target={item.href.startsWith('http') ? '_blank' : undefined}
+                    rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  >
+                    <Button
+                      variant="secondary"
+                      size="icon"
+                      className="rounded-xl bg-white text-black hover:bg-black hover:text-white transition-colors duration-200"
+                    >
+                      <item.icon className="h-6 w-6" />
+                      <span className="sr-only">{item.label}</span>
+                    </Button>
+                  </Link>
+                ))}
+              </div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -102,5 +118,5 @@ export default function Profile() {
         </div>
       </div>
     </div>
-  )
+  );
 }

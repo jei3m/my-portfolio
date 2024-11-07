@@ -75,7 +75,7 @@
 
     {
         "title": "Life Expectancy",
-        "description": "Final requirement for our Software Design Laboratory course. It utilizes data science algorithms to analyze and predict life expectancy at birth based on the dataset.",
+        "description": "A requirement for our Software Design Laboratory course. Utilizing data science algorithms to analyze and predict life expectancy at birth based on the dataset.",
         "type": "School Project",
         "imageUrl": "/assets/img/life.png",
         "githubUrl": "https://github.com/jei3m/life-expectancy",
