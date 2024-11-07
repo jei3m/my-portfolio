@@ -65,7 +65,7 @@ const Email = () => {
       opacity: 1, 
       y: 0,
       transition: {
-        duration: 0.6,
+        duration: 0.3,
         when: "beforeChildren",
         staggerChildren: 0.1
       }
@@ -99,13 +99,14 @@ const Email = () => {
       >
         <div className="w-full max-w-3xl bg-transparent">
           <div className="flex items-center justify-between mb-8">
-            <motion.h2 
+            <motion.h2
               className="text-white text-4xl font-bold"
               variants={itemVariants}
               style={{ fontFamily: "DM Serif Display, serif" }}
             >
-              Email me
+              Email me 
             </motion.h2>
+
             <motion.div
               className="text-gray-600 cursor-pointer"
               whileHover={{ scale: 1.1, rotate: 90 }}
@@ -180,10 +181,11 @@ const Email = () => {
             <motion.button
               type="submit"
               className="bg-white text-black border border-white rounded-lg py-3 px-6 font-bold transition-all duration-300 ease-in-out hover:bg-gray-900 hover:text-white hover:border-white focus:outline-none focus:ring-2 focus:ring-blue-500 transform-gpu"
-              variants={itemVariants}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2 }}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               Submit
             </motion.button>

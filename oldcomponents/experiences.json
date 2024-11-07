@@ -1,0 +1,56 @@
+[
+    {
+        "title": "1st Year College",
+        "course": "• Computer Engineering",
+        "school": "Holy Angel University | S.Y. 2021-2022",
+        "description": "The first time I got to experience programming, starting with C++ where I learned the basics like input and output operations, mathematical functions, and conditional statements. I also worked extensively with AutoCAD, creating 2D floor plans and designing 3D models of frames and casings. Calculus was definitely the struggle during this time, but I managed to get through it.",
+        "skills": [
+         "C++",
+         "AutoCAD"
+        ]
+    },
+    
+    {
+        "title": "2nd Year College",
+        "course": "• Computer Engineering",
+        "school": "Holy Angel University | S.Y. 2022-2023",
+        "description": "Started learning basic HTML and CSS, which introduced me to full-stack development. We were assigned a project using Python and Django REST framework for the backend. I also studied electronics, including components and their applications, though I still need hands-on experience. In the second semester, we focused on React.js, sparking my interest in front-end design.",
+        "skills": [
+            "HTML",
+            "CSS",
+            "Python",
+            "ReactJS",
+            "Django"
+        ]
+    },
+
+    {
+        "title": "3rd Year College",
+        "course": "• Computer Engineering",
+        "school": "Holy Angel University | S.Y. 2023-2024",
+        "description": "We worked on creating a tourism website, which we'll present to the local government using only HTML and CSS. Additionally, we had an individual task to create an \"About Me\" website, incorporating some JavaScript for animations. I was also introduced to Arduino, where we used various sensors and components and learned to write and upload code using the Arduino IDE.",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Arduino",
+            "C++"
+        ]
+    },
+
+    {
+        "title": "4th Year College",
+        "course": "• Computer Engineering",
+        "school": "Holy Angel University | S.Y. 2024-Current",
+        "description": "Started to work on personal projects in the field of both hardware and software to expand my portfolio. Got to work on different development boards like the ESP32 and Raspberry Pi. I've gained exposure to machine learning through Python notebooks and am now diving into AI, working on API integrations and local models from Ollama. Currently, I'm building the AI-Ponics web app for our thesis.",
+        "skills": [
+            "NextJS",
+            "Gemini AI",
+            "Ollama",
+            "Firebase",
+            "Tailwind CSS",
+            "ESP32",
+            "Raspberry Pi"
+        ]
+    }
+]

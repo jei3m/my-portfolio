@@ -19,9 +19,9 @@ interface ProjectCardProps {
 
 export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, demoUrl, skills }: ProjectCardProps) {
     return (
-        <CardContainer className="inter-var">
+        <CardContainer className="inter-var w-full">
             <CardBody 
-                className="bg-gray-900 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-gray-900 border-1 border-white w-full sm:w-[420px] h-auto rounded-xl p-3 text-white"
+                className="md:mb-[-26px] bg-gray-900 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-gray-900 border-1 border-white/[0.5] w-full max-w-[420px] mx-auto h-auto rounded-xl p-4 text-white"
             >
                 <CardItem translateZ="50" className="w-full">
                     <AspectRatio ratio={16 / 9.4} className="bg-muted">
@@ -36,21 +36,21 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
                 <CardItem
                     as="h3"
                     translateZ="60"
-                    className="scroll-m-20 text-2xl font-semibold tracking-tight mt-3"
+                    className="scroll-m-20 text-xl sm:text-2xl font-semibold tracking-tight mt-4"
                 >
                     {title}
                 </CardItem>
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-md text-gray-400"
+                    className="text-sm sm:text-md text-gray-400"
                 >
                     {type}
                 </CardItem>
                 <CardItem
                     as="p"
                     translateZ="50"
-                    className="text-md leading-6 [&:not(:first-child)]:mt-4"
+                    className="text-sm sm:text-md leading-6 [&:not(:first-child)]:mt-4"
                 >
                     {description}
                 </CardItem>
@@ -64,13 +64,14 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
                         ))}
                     </CardItem>
                 )}
-                <div className="flex justify-between items-center mt-6">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:justify-between items-start sm:items-center mt-6">
                     {githubUrl && (
                         <CardItem
                             translateZ={30}
+                            className="w-full sm:w-auto"
                         >
-                            <Link href={githubUrl} target="_blank" passHref>
-                                <Button size="sm" className="bg-white text-black hover:bg-green-500 hover:text-white">
+                            <Link href={githubUrl} target="_blank" passHref className="w-full sm:w-auto">
+                                <Button size="sm" className="w-full sm:w-auto bg-white text-black hover:bg-green-500 hover:text-white">
                                     Github
                                     <FaGithub className="ml-2 h-4 w-4" />
                                 </Button>
@@ -80,9 +81,10 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
                     {demoUrl && (
                         <CardItem
                             translateZ={30}
+                            className="w-full sm:w-auto"
                         >
-                            <Link href={demoUrl} target="_blank" passHref>
-                                <Button size="sm" className="hover:bg-green-500">
+                            <Link href={demoUrl} target="_blank" passHref className="w-full">
+                                <Button size="sm" className="w-full sm:w-auto hover:bg-green-500">
                                     Demo
                                     <ExternalLink className="ml-2 h-4 w-4" />
                                 </Button>

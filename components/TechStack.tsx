@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import { Brain } from 'lucide-react';
 import { Card, CardHeader, CardContent } from '@/components/custom-ui/card';
@@ -5,6 +6,8 @@ import { Reveal } from './custom-ui/reveal';
 import techStackData from '@/lib/techData.json'; 
 import Image from 'next/image';
 import Head from "next/head";
+import { motion } from 'framer-motion';
+
 
 interface TechStackItem {
   title: string;
@@ -22,7 +25,7 @@ const techStack: TechStackItem[] = techStackData.map(item => ({
 
 const TechStack: React.FC = () => {
   return (
-    <div className="mt-2 flex justify-center items-center">
+    <div className="flex justify-center items-center">
       <div className="max-w-[900px] mx-auto">
         <section className="py-4 px-4">
           <div className="max-w-6xl mx-auto">
@@ -32,6 +35,10 @@ const TechStack: React.FC = () => {
                 rel="stylesheet"
                 />
             </Head>
+            <Reveal
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+              >
             <h2
               id="techstack"
               style={{ fontFamily: "'DM Serif Display', serif" }}
@@ -39,18 +46,20 @@ const TechStack: React.FC = () => {
             >
               Technologies
             </h2>
+            </Reveal>
           </div>
         </section>
 
         <section className="px-4 pb-20">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {techStack.map((tech, index) => (
-              <Reveal
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
+                whileHover={{ scale: 1.06, transition: { duration: 0.2 } }}
               >
-                <Card className="bg-gray-900 border-white hover:border-blue-500 hover:scale-105 transition-all duration-300">
+                <Card className="bg-gray-900 border-white/[0.5] hover:border-blue-500 hover:scale-104 transition-all duration-300">
                   <Reveal
                     key={index}
                     initial={{ opacity: 0, x: -50 }}
@@ -90,7 +99,7 @@ const TechStack: React.FC = () => {
                     </CardContent>
                   </Reveal>
                 </Card>
-              </Reveal>
+              </motion.div>
             ))}
           </div>
         </section>

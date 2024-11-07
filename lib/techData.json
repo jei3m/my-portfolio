@@ -24,26 +24,13 @@
     "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
   },
   {
-    "title": "Vite",
-    "description": "Leveraging Vite for lightning-fast development server and optimized production builds.",
-    "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg"
-  },
-  {
-    "title": "JavaScript Ecosystem",
-    "description": "Creating interactive and dynamic web applications with modern JavaScript and TypeScript.",
-    "icons": [
-      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
-      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
-    ]
-  },
-  {
     "title": "Python",
     "description": "Implementing machine learning algorithms for data analysis and predictive modeling.",
     "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg"
   },
   {
     "title": "Firebase & Supabase",
-    "description": "Implementing real-time databases, authentication, and cloud functions for web applications.",
+    "description": "Implementing real-time databases, authentication, and cloud functions.",
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg"

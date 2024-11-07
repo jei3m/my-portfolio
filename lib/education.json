@@ -1,0 +1,22 @@
+[
+    {
+      "school": "Holy Angel University",
+      "degree": "Bachelor of Science in Computer Engineering",
+      "year": "2021 - PRESENT",
+      "description": "",
+      "logo": "/HAU.png"
+    },
+    {
+      "school": "St. Augustine Academy of Pampanga",
+      "degree": "Senior Highschool | STEM",
+      "year": "2019 - 2021",
+      "logo": "/SAAP.png"
+    },
+    {
+      "school": "St. Augustine Academy of Pampanga",
+      "degree": "Junior Highschool",
+      "year": "2015 - 2019",
+      "logo": "/SAAP.png"
+    }
+  ]
+  

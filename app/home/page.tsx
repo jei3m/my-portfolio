@@ -1,3 +1,4 @@
+import EducationSection from "@/components/Education-Section";
 import dynamic from "next/dynamic";
 
 const Header = dynamic(() => import("@/components/Header"));
@@ -12,12 +13,13 @@ const Profile= dynamic(() => import("@/components/Profile"));
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
+    <div className="flex overflow-hidden overflow-x-hidden flex-col w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
     <div className="flex flex-col">
       <Header />
       {/* <Profile/> */}
       <ProfileCard/>
-      <Experiences />
+      <EducationSection />
+      {/* <Experiences /> */}
       <Projects />
       <Aboutme />
     </div>

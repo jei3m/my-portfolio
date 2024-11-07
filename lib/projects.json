@@ -9,8 +9,7 @@
         "skills": [
             "React JS",
             "Firebase",
-            "Gemini AI",
-            "JavaScript"
+            "Gemini AI"
         ]
     },
 
@@ -39,7 +38,6 @@
         "skills": [
             "Next JS",
             "Llama 405B",
-            "TypeScript",
             "Tailwind CSS"
         ]
     },
@@ -68,14 +66,13 @@
         "skills": [
             "React JS",
             "Gemini AI",
-            "JavaScript",
             "HTML & CSS"
         ]
     },
 
     {
         "title": "Life Expectancy",
-        "description": "A requirement for our Software Design Laboratory course. Utilizing data science algorithms to analyze and predict life expectancy at birth based on the dataset.",
+        "description": "A requirement for our Software Design Laboratory course. Utilizing data science algorithms to analyze and predict based on the dataset.",
         "type": "School Project",
         "imageUrl": "/assets/img/life.png",
         "githubUrl": "https://github.com/jei3m/life-expectancy",
@@ -88,7 +85,7 @@
     {
 
         "title": "About Me",
-        "description": "A requirement for our Software Development course in my 3rd year of college, using HTML and CSS.",
+        "description": "A requirement for our Software Development course using HTML and CSS.",
         "type": "School Project",
         "imageUrl": "/assets/img/aboutme.png",
         "githubUrl": "https://github.com/jei3m/SDEV_Experiment-4/tree/main",
@@ -101,7 +98,7 @@
     {
         
         "title": "CYD Marauder",
-        "description": "A simple guide to installing ESP32 Marauder firmware from source onto your ESP32 Dev module.",
+        "description": "A simple guide to installing the ESP32 Marauder firmware from source onto your ESP32 Dev module.",
         "type": "Personal Project",
         "imageUrl": "/assets/img/cyd.png",
         "githubUrl": "https://github.com/jei3m/cyd-marauder",
