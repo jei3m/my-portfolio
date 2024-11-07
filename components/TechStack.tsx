@@ -22,7 +22,7 @@ const techStack: TechStackItem[] = techStackData.map(item => ({
 
 const TechStack: React.FC = () => {
   return (
-    <div className="mt-14 flex justify-center items-center">
+    <div className="mt-2 flex justify-center items-center">
       <div className="max-w-[900px] mx-auto">
         <section className="py-4 px-4">
           <div className="max-w-6xl mx-auto">
@@ -35,7 +35,7 @@ const TechStack: React.FC = () => {
             <h2
               id="techstack"
               style={{ fontFamily: "'DM Serif Display', serif" }}
-              className="ml-[2px] mb-1 font-extrabold tracking-tight text-white text-4xl lg:text-4xl text-left w-full z-80"
+              className="mb-1 font-extrabold tracking-tight text-white text-4xl lg:text-4xl text-left w-full z-80"
             >
               Technologies
             </h2>

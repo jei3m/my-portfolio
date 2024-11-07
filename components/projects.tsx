@@ -6,7 +6,7 @@ import Head from "next/head";
 
 export default function Projects() {
     return (
-        <div className="max-w-[900px] flex flex-col w-full mx-auto relative flex items-center justify-center">
+        <div className="py-4 max-w-[900px] flex flex-col w-full mx-auto relative flex items-center justify-center">
         <div className="p-4 flex flex-col w-full max-w-[1050px] mx-auto relative flex items-center justify-center">
         <section id="projects" className="flex flex-col items-center justify-center">
     
@@ -20,7 +20,7 @@ export default function Projects() {
             <h2
                 id="projects"
                 style={{ fontFamily: "'DM Serif Display', serif", color: 'white' }}
-                className="ml-[24px] mb-[-20px] font-extrabold tracking-tight text-4xl lg:text-4xl text-left w-full z-80"
+                className="mb-[-20px] font-extrabold tracking-tight text-4xl lg:text-4xl text-left w-full z-80"
                 >
                 Projects
             </h2>
