@@ -1,0 +1,66 @@
+
+[
+  {
+    "title": "React.js",
+    "description": "Building dynamic and responsive user interfaces with React's component-based architecture.",
+    "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+  },
+  {
+    "title": "Next.js",
+    "description": "Leveraging server-side rendering and static site generation for optimal performance and SEO.",
+    "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg"
+  },
+  {
+    "title": "HTML & CSS",
+    "description": "Crafting semantic markup and stylish designs with modern HTML5 and CSS3 features.",
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
+    ]
+  },
+  {
+    "title": "Tailwind CSS",
+    "description": "Utilizing utility-first CSS framework for rapid and consistent UI development.",
+    "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
+  },
+  {
+    "title": "Vite",
+    "description": "Leveraging Vite for lightning-fast development server and optimized production builds.",
+    "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg"
+  },
+  {
+    "title": "JavaScript Ecosystem",
+    "description": "Creating interactive and dynamic web applications with modern JavaScript and TypeScript.",
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
+    ]
+  },
+  {
+    "title": "Python",
+    "description": "Implementing machine learning algorithms for data analysis and predictive modeling.",
+    "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg"
+  },
+  {
+    "title": "Firebase & Supabase",
+    "description": "Implementing real-time databases, authentication, and cloud functions for web applications.",
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg"
+    ]
+  },
+  {
+    "title": "IoT Development",
+    "description": "Creating embedded systems with Arduino and Raspberry Pi for innovative hardware solutions.",
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/arduino-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/raspberrypi-colored.svg"
+    ]
+  },
+  {
+    "title": "AI Integration",
+    "description": "Implementing AI capabilities through API inferences and local models like Ollama.",
+    "isLucideIcon": true,
+    "LucideIcon": "Brain"
+  }
+]

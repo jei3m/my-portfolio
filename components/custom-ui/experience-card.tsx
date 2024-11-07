@@ -4,13 +4,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 interface ExperienceCardProps {
     title: string;
-    company: string;
-    date: string;
+    course: string;
+    school: string;
     description: string;
     skills?: string[];
 }
 
-export function ExperienceCard({ title, company, date, description, skills }: ExperienceCardProps) {
+export function ExperienceCard({ title, course, school, description, skills }: ExperienceCardProps) {
     return (
         <Reveal
         initial={{ opacity: 0, x: -50 }}
@@ -22,8 +22,8 @@ export function ExperienceCard({ title, company, date, description, skills }: Ex
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
             >
                 <CardHeader>
-                    <CardTitle>{title}  {company}</CardTitle>
-                    <CardDescription>{date}</CardDescription>
+                    <CardTitle>{title}  {course}</CardTitle>
+                    <CardDescription>{school}</CardDescription>
                 </CardHeader>
             </Reveal>
             <CardContent className="flex flex-col gap-4">

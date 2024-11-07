@@ -15,7 +15,7 @@ export default function ProjectsPage() {
         />
       </Head>
       <div className="flex flex-col overflow-x-hidden overflow-hidden w-full mx-auto relative flex items-center justify-center">
-        <div className="flex flex-col w-full max-w-[1000px]">
+        <div className="flex flex-col w-full max-w-[900px]">
           <main className="max-w-7xl mx-auto px-4 py-2">
             <h2
               id="experience"

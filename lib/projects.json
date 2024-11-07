@@ -88,7 +88,7 @@
     {
 
         "title": "About Me",
-        "description": "A personal website I created for our Software Development course in my 3rd year of college, using HTML and CSS.",
+        "description": "A requirement for our Software Development course in my 3rd year of college, using HTML and CSS.",
         "type": "School Project",
         "imageUrl": "/assets/img/aboutme.png",
         "githubUrl": "https://github.com/jei3m/SDEV_Experiment-4/tree/main",

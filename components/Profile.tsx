@@ -4,9 +4,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faFacebook, faInstagramSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FaEnvelope, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6"
+import { FaEnvelope} from "react-icons/fa6"
 
 export default function Profile() {
   return (

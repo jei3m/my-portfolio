@@ -6,7 +6,7 @@ const Projects = dynamic(() => import("@/components/projects"));
 const Separator = dynamic(() => import("@/components/custom-ui/separator"));
 const Contact = dynamic(() => import("@/components/contact"));
 const Experiences = dynamic(() => import("@/components/experiences"));
-const Aboutme = dynamic(() => import("@/components/Aboutme"));
+const Aboutme = dynamic(() => import("@/components/TechStack"));
 const Profile= dynamic(() => import("@/components/Profile"));
 
 export default function Home() {

@@ -1,19 +1,20 @@
 [
     {
         "title": "1st Year College",
-        "company": "• Computer Engineering",
-        "date": "Holy Angel University | S.Y. 2021-2022",
-        "description": "This is my first time I get to experience programming. Starting with C++, where I learned the basics such as input and output operations, basic mathematical functions, and conditional statements like if and else. In addition to programming, I worked extensively with AutoCAD, creating detailed 2D floor plans of various sizes and layouts. For my 3D projects in AutoCAD, I successfully designed digital models of fundamental parts such as frames and casings. These experiences have provided me with a solid foundation, providing me the skills and knowledge that I constantly apply up to this day. It applies both programming and digital design, which enhances my problem-solving skills and technical proficiency.",
+        "course": "• Computer Engineering",
+        "school": "Holy Angel University | S.Y. 2021-2022",
+        "description": "The first time I got to experience programming, starting with C++ where I learned the basics like input and output operations, mathematical functions, and conditional statements. I also worked extensively with AutoCAD, creating 2D floor plans and designing 3D models of frames and casings. Calculus was definitely the struggle during this time, but I managed to get through it.",
         "skills": [
          "C++",
          "AutoCAD"
         ]
     },
+    
     {
         "title": "2nd Year College",
-        "company": "• Computer Engineering",
-        "date": "Holy Angel University | S.Y. 2022-2023",
-        "description": "This is where my experience with web development has came to a start. I got introduced to basic html and css, and this is where I got exposed to full-stack development for the first time.  We are tasked to create a full-stack project using python and Django REST framework as our backend. This is where I also got study about electronics, what are the various components, what they do, and how they should be applied. Though it is more on a textbook approach I have yet to experience handling electronics later on. Throughout the 2nd semester of this school year, we are tasked to study React.js and this is where my interest to front-end design has started. ",
+        "course": "• Computer Engineering",
+        "school": "Holy Angel University | S.Y. 2022-2023",
+        "description": "Started learning basic HTML and CSS, which introduced me to full-stack development. We were assigned a project using Python and Django REST framework for the backend. I also studied electronics, including components and their applications, though I still need hands-on experience. In the second semester, we focused on React.js, sparking my interest in front-end design.",
         "skills": [
             "HTML",
             "CSS",
@@ -22,11 +23,12 @@
             "Django"
         ]
     },
+
     {
         "title": "3rd Year College",
-        "company": "• Computer Engineering",
-        "date": "Holy Angel University | S.Y. 2023-2024",
-        "description": "Throughout the first semester of this school year, we were tasked with creating a tourism website, and by the end of the project, we'll have to present it to the local government of the designated place of our website. We mostly focused on the front-end aspect of web development, specifically using only HTML and CSS. We were given an individual task as well to create an about me website using those two languages mentioned earlier, though there is some JavaScript involved for the animations. This is the school year that I also got exposed to Arduino, we started to use different types of sensors, and components and got to write and upload code to our module using the Arduino IDE.",
+        "course": "• Computer Engineering",
+        "school": "Holy Angel University | S.Y. 2023-2024",
+        "description": "We worked on creating a tourism website, which we'll present to the local government using only HTML and CSS. Additionally, we had an individual task to create an \"About Me\" website, incorporating some JavaScript for animations. I was also introduced to Arduino, where we used various sensors and components and learned to write and upload code using the Arduino IDE.",
         "skills": [
             "HTML",
             "CSS",
@@ -38,9 +40,9 @@
 
     {
         "title": "4th Year College",
-        "company": "• Computer Engineering",
-        "date": "Holy Angel University | S.Y. 2024-Current",
-        "description": "I’m currently expanding my portfolio with web-based projects, exploring programming languages, and expanding my knowledge in tech. My interest in electronics began with the ESP32 Marauder project, where I ported and flashed firmware onto an ESP32 board. Also recently, I completed a project using a Raspberry Pi to control LEDs with Siri voice commands for my Embedded Systems laboratory course. I also gained exposure to machine learning through Python notebooks, creating models from datasets. Now, I’m diving deeper into AI and its integrations via API inferences and also local models from Ollama. I'm currently building the AI-Ponics web app as part of our thesis.",
+        "course": "• Computer Engineering",
+        "school": "Holy Angel University | S.Y. 2024-Current",
+        "description": "Started to work on personal projects in the field of both hardware and software to expand my portfolio. Got to work on different development boards like the ESP32 and Raspberry Pi. I've gained exposure to machine learning through Python notebooks and am now diving into AI, working on API integrations and local models from Ollama. Currently, I'm building the AI-Ponics web app for our thesis.",
         "skills": [
             "NextJS",
             "Gemini AI",
