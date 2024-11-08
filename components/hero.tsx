@@ -41,10 +41,9 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="space-y-2"
             >
               <h2 
-                className="text-2xl md:text-3xl font-light text-zinc-400"
+                className="mb-2 text-2xl md:text-3xl font-light text-zinc-300"
                 style={{ fontFamily: "Inter" }}
               >
                 Welcome to the portfolio of
