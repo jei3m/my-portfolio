@@ -1,19 +1,21 @@
 "use client"
-import { Circle, MapPin, FileText, Mail, FileTextIcon } from "lucide-react"
+import { useState } from "react";
+import { Circle, MapPin, FileText, Mail, FileTextIcon, CopyIcon, CheckIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { FaRegEnvelope, FaFileLines, FaRegFileLines } from "react-icons/fa6"
 import { IBM_Plex_Serif } from "next/font/google";
 
 const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
-  weight: ["400","500","600", "700"], // or any other available weights
+  weight: ["400","500","600", "700"],
 });
 
 export default function Profile() {
+  const [isCopied, setIsCopied] = useState(false);
+
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
@@ -58,10 +60,43 @@ export default function Profile() {
     }
   }
 
+  // New animation variants for the copy/check icons
+  const iconVariants = {
+    initial: { 
+      scale: 0.8,
+      opacity: 0,
+      rotate: -180
+    },
+    animate: { 
+      scale: 1,
+      opacity: 1,
+      rotate: 0,
+      transition: {
+        type: "spring",
+        stiffness: 300,
+        damping: 20
+      }
+    },
+    exit: { 
+      scale: 0.8,
+      opacity: 0,
+      rotate: 180,
+      transition: {
+        duration: 0.2
+      }
+    }
+  }
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("justinmiguel.rys03@gmail.com");
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000);
+  }
+
   return (
     <div className="text-white flex flex-col justify-center p-4 mt-[6rem]">
       <motion.div variants={childVariants} initial="hidden" animate="visible">
-      <div className="text-left mb-4 font-semibold text-lg">Hello! 🙂‍↕️</div>
+        <div className="text-left mb-4 font-semibold text-lg">Hello! 🙂‍↕️</div>
       </motion.div>
       <motion.div 
         className="max-w-[870px] bg-gray-900 rounded-lg shadow-xl border border-white/[0.5]"
@@ -71,7 +106,6 @@ export default function Profile() {
       >
         <div className="md:flex items-center">
           <div className="md:flex-shrink-0 flex justify-center py-4 md:pl-8">
-          {/* className="mr-4relative w-40 sm:w-40 md:w-48 lg:w-56 h-48 sm:h-52 md:h-60 lg:h-64 mb-sm-30" */}
             <motion.div 
               className="mr-4 relative w-40 h-40 sm:w-40 sm:h-40 md:w-48 md:h-60 lg:w-56 lg:h-64 mb-sm-30"
               variants={imageVariants}
@@ -108,54 +142,53 @@ export default function Profile() {
               className="mt-5 flex space-x-4"
               variants={childVariants}
             >
-             <motion.div variants={socialIconVariants} whileHover="hover">
-              <Link href="/email" className="text-orange-300 hover:text-white transition-colors">
-                <Mail className="h-7 w-7 mt-[-2px]" />
-              </Link>
-            </motion.div>
+              <motion.div variants={socialIconVariants} whileHover="hover">
+                <Link href="/email" className="text-orange-300 hover:text-white transition-colors">
+                  <Mail className="h-7 w-7 mt-[-2px]" />
+                </Link>
+              </motion.div>
 
-            <motion.div variants={socialIconVariants} whileHover="hover">
-              <a
-                href="https://www.facebook.com/justinmiguel.reyes/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:text-white transition-colors"
-              >
-                <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
-              </a>
-            </motion.div>
+              <motion.div variants={socialIconVariants} whileHover="hover">
+                <a
+                  href="https://www.facebook.com/justinmiguel.reyes/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-white transition-colors"
+                >
+                  <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
+                </a>
+              </motion.div>
 
-            <motion.div variants={socialIconVariants} whileHover="hover">
-              <a
-                href="https://github.com/jei3m"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-200 hover:text-white transition-colors"
-              >
-                <FontAwesomeIcon icon={faGithub} className="h-6 w-6" />
-              </a>
-            </motion.div>
+              <motion.div variants={socialIconVariants} whileHover="hover">
+                <a
+                  href="https://github.com/jei3m"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-200 hover:text-white transition-colors"
+                >
+                  <FontAwesomeIcon icon={faGithub} className="h-6 w-6" />
+                </a>
+              </motion.div>
 
-            <motion.div variants={socialIconVariants} whileHover="hover">
-              <a
-                href="https://www.linkedin.com/in/justin-miguel-reyes-175323327/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-300 hover:text-white transition-colors"
-              >
-                <FontAwesomeIcon icon={faLinkedin} className="h-7 w-7 mt-[-2px]" />
-              </a>
-            </motion.div>
+              <motion.div variants={socialIconVariants} whileHover="hover">
+                <a
+                  href="https://www.linkedin.com/in/justin-miguel-reyes-175323327/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-300 hover:text-white transition-colors"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} className="h-7 w-7 mt-[-2px]" />
+                </a>
+              </motion.div>
 
-            <motion.div variants={socialIconVariants} whileHover="hover">
-              <a
-                href="/opencv"
-                className="text-red-300 hover:text-white transition-colors"
-              >
-                <FileText className="h-6 w-6" />
-              </a>
-            </motion.div>
-    
+              <motion.div variants={socialIconVariants} whileHover="hover">
+                <a
+                  href="/opencv"
+                  className="text-red-300 hover:text-white transition-colors"
+                >
+                  <FileText className="h-6 w-6" />
+                </a>
+              </motion.div>
             </motion.div>
 
             <motion.div 
@@ -168,32 +201,39 @@ export default function Profile() {
               >
                 <Circle className="h-3 w-3 text-green-400 fill-current mr-[-3px]" />
                 <span className="text-md text-gray-300">justinmiguel.rys03@gmail.com</span>
+                <div className="relative w-5 h-5">
+                  <AnimatePresence mode="wait">
+                    {isCopied ? (
+                      <motion.div
+                        key="check"
+                        className="absolute inset-0 cursor-pointer"
+                        variants={iconVariants}
+                        initial="initial"
+                        animate="animate"
+                        exit="exit"
+                      >
+                        <CheckIcon className="h-5 w-5 text-green-400" />
+                      </motion.div>
+                    ) : (
+                      <motion.div
+                        key="copy"
+                        className="absolute inset-0 cursor-pointer"
+                        variants={iconVariants}
+                        initial="initial"
+                        animate="animate"
+                        exit="exit"
+                        onClick={handleCopy}
+                      >
+                        <CopyIcon className="h-5 w-5 text-gray-400 hover:text-white transition-colors" />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
               </motion.div>
-              
-              {/* <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.2 }}
-                whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
-              >
-                <Link href="/opencv">
-                  <button className="group relative overflow-hidden rounded-full px-4 py-2 bg-white/20 hover:bg-white/10 border border-white transition-colors duration-200">
-                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-200" />
-                    
-                    <div className="relative flex items-center gap-2 text-zinc-100 sm:text-xs">
-                      <span className="text-sm font-medium">Open CV</span>
-                      <FileText className="w-4 h-4 text-white group-hover:text-purple-300 transition-colors duration-200" />
-                    </div>
-                    
-                    <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500" />
-                  </button>
-                </Link>
-              </motion.div> */}
             </motion.div>
           </div>
         </div>
       </motion.div>
-      {/* <div className="text-right mt-4 font-semibold text-lg">please hmu. 🙁</div> */}
     </div>
   )
 }
