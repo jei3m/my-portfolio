@@ -6,6 +6,11 @@ import { useState } from 'react';
 import { Reveal } from './custom-ui/reveal';
 import { Star } from "lucide-react";
 import { AnimatePresence, motion } from 'framer-motion';
+import Head from "next/head";
+import { DM_Serif_Text } from "next/font/google";
+
+
+const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
 export default function Component() {
   const [isEducation, setIsEducation] = useState(true);
@@ -13,6 +18,7 @@ export default function Component() {
   const toggleSection = () => {
     setIsEducation(!isEducation);
   };
+  
 
   return (
     <section className="mt-2 text-white flex items-center justify-center p-4">
@@ -21,15 +27,9 @@ export default function Component() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
         >
-          <h2
-            style={{
-              fontFamily: "'DM Serif Display', serif",
-              color: 'white'
-            }}
-            className="mb-4 font-extrabold tracking-tight text-4xl lg:text-4xl text-left z-80"
-          >
+          <h1 className={`${dmSerifText.className} mb-4 text-4xl lg:text-4xl text-left z-80 text-white`}>
             {isEducation ? 'Education' : 'Experience'}
-          </h2>
+          </h1>
         </Reveal>
 
         <AnimatePresence mode="wait">
@@ -102,22 +102,22 @@ export default function Component() {
           </motion.div>
         </AnimatePresence>
 
-        <div className="absolute top-0 right-0 mt-1">
-        <Reveal
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
-        >
-          <button
-            onClick={toggleSection}
-            className="group relative overflow-hidden rounded-full px-4 py-2 bg-white/20 hover:bg-white/10 border border-white transition-colors duration-200"
+        <div className="absolute top-0 right-0">
+          <Reveal
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-200" />
-            <div className="relative flex items-center gap-2 text-zinc-100">
-              <span className="text-sm font-medium">{isEducation ? 'Experience' : 'Education'}</span>
-              <Star className="w-5 h-5 text-white group-hover:text-purple-300 transition-colors duration-200" />
-            </div>
-            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500" /> 
-          </button>
+            <button
+              onClick={toggleSection}
+              className="group relative overflow-hidden rounded-full px-4 py-2 bg-white/20 hover:bg-white/10 border border-white transition-colors duration-200"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-200" />
+              <div className="relative flex items-center gap-2 text-zinc-100">
+                <span className="text-sm font-medium">{isEducation ? 'Experience' : 'Education'}</span>
+                <Star className="w-5 h-5 text-white group-hover:text-purple-300 transition-colors duration-200" />
+              </div>
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500" /> 
+            </button>
           </Reveal>
         </div>
       </div>

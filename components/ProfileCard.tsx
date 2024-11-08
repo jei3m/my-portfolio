@@ -1,11 +1,11 @@
 "use client"
-import { Circle, Github, Linkedin, Mail, MapPin, Instagram, Facebook, FileText } from "lucide-react"
+import { Circle, MapPin, FileText, Mail, FileTextIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faFacebook, faInstagramSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { FaEnvelope } from "react-icons/fa6"
+import { faGithub, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { FaRegEnvelope, FaFileLines, FaRegFileLines } from "react-icons/fa6"
 
 export default function Profile() {
   const containerVariants = {
@@ -53,7 +53,8 @@ export default function Profile() {
   }
 
   return (
-    <div className="text-white flex flex-col items-center justify-center p-4 mt-[6rem]">
+    <div className="text-white flex flex-col justify-center p-4 mt-[6rem]">
+      <div className="text-left mb-4 font-semibold text-lg">Hello! 🙂‍↕️</div>
       <motion.div 
         className="max-w-[870px] bg-gray-900 rounded-lg shadow-xl border border-white/[0.5]"
         variants={containerVariants}
@@ -61,9 +62,10 @@ export default function Profile() {
         animate="visible"
       >
         <div className="md:flex items-center">
-          <div className="md:flex-shrink-0 flex justify-center p-4 md:p-8">
+          <div className="md:flex-shrink-0 flex justify-center py-4 md:pl-8">
+          {/* className="mr-4relative w-40 sm:w-40 md:w-48 lg:w-56 h-48 sm:h-52 md:h-60 lg:h-64 mb-sm-30" */}
             <motion.div 
-              className="relative w-40 h-40 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mb-sm-30"
+              className="mr-4 relative w-40 h-40 sm:w-40 sm:h-40 md:w-48 md:h-60 lg:w-56 lg:h-64 mb-sm-30"
               variants={imageVariants}
             >
               <Image
@@ -74,7 +76,7 @@ export default function Profile() {
               />
             </motion.div>
           </div>
-          <div className="p-8 flex-grow">
+          <div className="py-8 px-3 flex-grow">
             <motion.h1 
               className="text-3xl leading-8 font-bold tracking-tight text-white sm:text-4xl"
               variants={childVariants}
@@ -92,62 +94,62 @@ export default function Profile() {
               className="mt-4 text-lg text-gray-300"
               variants={childVariants}
             >
-              A Computer Engineering student and Tech Enthusiast with a foundation in Web Development, IoT, and IT.
+              A Computer Engineering student and Tech Enthusiast with a foundation in Web Development, IoT, and IT. <span className="text-2xl">👨🏻‍💻</span>
             </motion.p>
             <motion.div 
-              className="mt-6 flex space-x-4"
+              className="mt-5 flex space-x-4"
               variants={childVariants}
             >
-              <motion.div variants={socialIconVariants} whileHover="hover">
-                <Link href="/email" className="text-gray-300 hover:text-white transition-colors">
-                  <FaEnvelope className="h-7 w-7 mt-[-1px]" />
-                </Link>
-              </motion.div>
-              
-              <motion.div variants={socialIconVariants} whileHover="hover">
-                <a
-                  href="https://www.facebook.com/justinmiguel.reyes/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
-                </a>
-              </motion.div>
-
-              <motion.div variants={socialIconVariants} whileHover="hover">
-                <a
-                  href="https://github.com/jei3m"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  <FontAwesomeIcon icon={faGithub} className="h-6 w-6" />
-                </a>
-              </motion.div>
-
-              <motion.div variants={socialIconVariants} whileHover="hover">
-                <a
-                  href="https://www.linkedin.com/in/justin-miguel-reyes-175323327/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6" />
-                </a>
-              </motion.div>
-
-              <motion.div variants={socialIconVariants} whileHover="hover">
-                <a
-                  href="https://www.instagram.com/_justinmiguel/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  <FontAwesomeIcon icon={faInstagramSquare} className="h-6 w-6" />
-                </a>
-              </motion.div>
+             <motion.div variants={socialIconVariants} whileHover="hover">
+              <Link href="/email" className="text-orange-300 hover:text-white transition-colors">
+                <Mail className="h-7 w-7 mt-[-2px]" />
+              </Link>
             </motion.div>
+
+            <motion.div variants={socialIconVariants} whileHover="hover">
+              <a
+                href="https://www.facebook.com/justinmiguel.reyes/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-white transition-colors"
+              >
+                <FontAwesomeIcon icon={faFacebook} className="h-6 w-6" />
+              </a>
+            </motion.div>
+
+            <motion.div variants={socialIconVariants} whileHover="hover">
+              <a
+                href="https://github.com/jei3m"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-200 hover:text-white transition-colors"
+              >
+                <FontAwesomeIcon icon={faGithub} className="h-6 w-6" />
+              </a>
+            </motion.div>
+
+            <motion.div variants={socialIconVariants} whileHover="hover">
+              <a
+                href="https://www.linkedin.com/in/justin-miguel-reyes-175323327/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-300 hover:text-white transition-colors"
+              >
+                <FontAwesomeIcon icon={faLinkedin} className="h-7 w-7 mt-[-2px]" />
+              </a>
+            </motion.div>
+
+            <motion.div variants={socialIconVariants} whileHover="hover">
+              <a
+                href="/opencv"
+                className="text-red-300 hover:text-white transition-colors"
+              >
+                <FileText className="h-6 w-6" />
+              </a>
+            </motion.div>
+    
+            </motion.div>
+
             <motion.div 
               className="mt-4 flex items-center justify-between"
               variants={childVariants}
@@ -160,7 +162,7 @@ export default function Profile() {
                 <span className="text-sm text-gray-300">Ready to connect</span>
               </motion.div>
               
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.2 }}
@@ -178,11 +180,12 @@ export default function Profile() {
                     <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500" />
                   </button>
                 </Link>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </div>
         </div>
       </motion.div>
+      {/* <div className="text-right mt-4 font-semibold text-lg">please hmu. 🙁</div> */}
     </div>
   )
 }

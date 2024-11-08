@@ -7,6 +7,9 @@ import techStackData from '@/lib/techData.json';
 import Image from 'next/image';
 import Head from "next/head";
 import { motion } from 'framer-motion';
+import { DM_Serif_Text } from "next/font/google";
+
+const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
 
 interface TechStackItem {
@@ -29,23 +32,22 @@ const TechStack: React.FC = () => {
       <div className="max-w-[900px] mx-auto">
         <section className="py-4 px-4">
           <div className="max-w-6xl mx-auto">
-            <Head>
-                <link
-                href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
-                rel="stylesheet"
-                />
-            </Head>
             <Reveal
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
               >
-            <h2
-              id="techstack"
-              style={{ fontFamily: "'DM Serif Display', serif" }}
-              className="mb-1 font-extrabold tracking-tight text-white text-4xl lg:text-4xl text-left w-full z-80"
-            >
-              Technologies
-            </h2>
+                    <motion.h2
+                        id="Tech"
+                        className={`${dmSerifText.className} text-left mb-[-1px] text-4xl lg:text-4xl z-80 text-white`}                        
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.8,
+                            ease: "easeOut"
+                        }}
+                    >
+                        Technologies
+                    </motion.h2>
             </Reveal>
           </div>
         </section>
@@ -102,6 +104,7 @@ const TechStack: React.FC = () => {
               </motion.div>
             ))}
           </div>
+          <div className="text-right mr-[-4px] mt-4 font-semibold text-lg">thank you. 🥺</div>
         </section>
       </div>
     </div>

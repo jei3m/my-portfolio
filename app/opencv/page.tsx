@@ -5,6 +5,10 @@ import Header from '@/components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
+import { DM_Serif_Text } from "next/font/google";
+
+const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
+
 
 const CVPage = () => {
   const downloadRef = useRef<HTMLAnchorElement>(null);
@@ -26,16 +30,18 @@ const CVPage = () => {
       </Head>
 
       <main className="flex-grow container mx-auto px-4 py-20 flex flex-col items-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          id="experience"
-          style={{ fontFamily: "DM Serif Display, serif", color: "white" }}
-          className="scroll-m-20 font-extrabold tracking-tight text-3xl lg:text-4xl sm:text-4xl text-center w-full z-20"
-        >
-          My Curriculum Vitae
-        </motion.h2>
+      <motion.h2
+                        id="OpenCV"
+                        className={`${dmSerifText.className} mt-2 text-left mb-[-2px] text-3xl sm:text-4xl lg:text-4xl z-80 text-white`}                        
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.8,
+                            ease: "easeOut"
+                        }}
+                    >
+                        My Curriculum Vitae
+                    </motion.h2>
         <br />
         <motion.div
           initial={{ opacity: 0, y: 40 }}

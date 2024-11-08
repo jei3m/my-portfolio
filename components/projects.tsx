@@ -6,6 +6,9 @@ import { ProjectCard3d } from './custom-ui/ProjectCard';
 import Head from "next/head";
 import { Button } from './custom-ui/button';
 import { motion } from 'framer-motion';
+import { DM_Serif_Text } from "next/font/google";
+
+const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
 export default function Projects() {
     const INITIAL_VISIBLE_PROJECTS = 2;
@@ -24,18 +27,14 @@ export default function Projects() {
     return (
         <div className="py-2 max-w-[900px] flex flex-col w-full mx-auto relative flex items-center justify-center">
             <div className="p-4 flex flex-col w-full max-w-[1050px] mx-auto relative flex items-center justify-center">
-                <section id="projects" className="flex flex-col items-center justify-center">
-                    <Head>
-                        <link
-                            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
-                            rel="stylesheet"
-                        />
-                    </Head>
-
+                <section id="projects" className="flex flex-col items-start justify-center w-full">
+                <Reveal
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
+                >
                     <motion.h2
                         id="projects"
-                        style={{ fontFamily: "'DM Serif Display', serif", color: 'white' }}
-                        className="mb-[-20px] font-extrabold tracking-tight text-4xl lg:text-4xl text-left w-full z-80"
+                        className={`${dmSerifText.className} text-left mb-[-22px] text-4xl lg:text-4xl z-80 text-white`}                        
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
@@ -45,8 +44,9 @@ export default function Projects() {
                     >
                         Projects
                     </motion.h2>
+                    </Reveal>
 
-                    <div className="flex flex-wrap justify-center gap-x-7 max-w-screen-lg sm:grid sm:grid-cols-2 sm:gap-6">
+                    <div className="flex flex-wrap justify-center gap-x-7 max-w-screen-lg sm:grid sm:grid-cols-2 sm:gap-6 w-full">
                         {projects.slice(0, visibleProjects).map((project, index) => (
                             <Reveal
                                 key={project.title}
@@ -68,26 +68,26 @@ export default function Projects() {
                         ))}
                     </div>
 
-                    <div className="mt-10 md:mt-14 flex gap-4">
-                           <Reveal
-                                initial={{ opacity: 0, y: -10 }}
-                                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
-                            >
-                        {visibleProjects < projects.length ? (
-                            <Button
-                                onClick={showMore}
-                                className="px-6 py-2 bg-gray-600 text-white text-sm rounded-lg hover:bg-gray-800 transition-colors duration-200"
-                            >
-                                View More...
-                            </Button>
-                        ) : visibleProjects > INITIAL_VISIBLE_PROJECTS && (
-                            <Button
-                                onClick={showLess}
-                                className="px-6 py-2 bg-gray-600 text-white text-sm rounded-lg hover:bg-gray-800 transition-colors duration-200"
-                            >
-                                Show Less...
-                            </Button>
-                        )}
+                    <div className="mt-10 md:mt-14 flex gap-4 w-full items-start justify-center">
+                        <Reveal
+                            initial={{ opacity: 0, y: -10 }}
+                            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+                        >
+                            {visibleProjects < projects.length ? (
+                                <Button
+                                    onClick={showMore}
+                                    className="px-6 py-2 bg-gray-600 text-white text-sm rounded-lg hover:bg-gray-800 transition-colors duration-200"
+                                >
+                                    View More...
+                                </Button>
+                            ) : visibleProjects > INITIAL_VISIBLE_PROJECTS && (
+                                <Button
+                                    onClick={showLess}
+                                    className="px-6 py-2 bg-gray-600 text-white text-sm rounded-lg hover:bg-gray-800 transition-colors duration-200"
+                                >
+                                    Show Less...
+                                </Button>
+                            )}
                         </Reveal>
                     </div>
                 </section>

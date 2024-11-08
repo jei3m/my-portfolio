@@ -3,6 +3,10 @@ import Script from 'next/script';
 import { useState, ChangeEvent, FormEvent } from 'react';
 import Swal from 'sweetalert2';
 import { motion, AnimatePresence } from 'framer-motion';
+import Header from '@/components/Header'; 
+import { DM_Serif_Text } from "next/font/google";
+
+const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
 const Email = () => {
   const [formData, setFormData] = useState({
@@ -99,16 +103,21 @@ const Email = () => {
       >
         <div className="w-full max-w-3xl bg-transparent">
           <div className="flex items-center justify-between mb-8">
-            <motion.h2
-              className="text-white text-4xl font-bold"
-              variants={itemVariants}
-              style={{ fontFamily: "DM Serif Display, serif" }}
-            >
-              Email me 
-            </motion.h2>
+          <motion.h2
+                        id="Email"
+                        className={`${dmSerifText.className} mb-[-10px] text-left text-4xl text-white`}                        
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.8,
+                            ease: "easeOut"
+                        }}
+                    >
+                        Email Me
+                    </motion.h2>
 
             <motion.div
-              className="text-gray-600 cursor-pointer"
+              className="mb-[-14px] text-gray-600 cursor-pointer"
               whileHover={{ scale: 1.1, rotate: 90 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Close"
@@ -190,6 +199,8 @@ const Email = () => {
               Submit
             </motion.button>
           </form>
+          <div className="text-right mt-4 mb-[-14px] font-semibold text-md">please hmu. 🙁</div>
+
         </div>
       </motion.div>
     </div>
