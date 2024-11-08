@@ -78,7 +78,7 @@ export default function Projects() {
                                     onClick={showMore}
                                     className="px-6 py-2 bg-gray-600 text-white text-sm rounded-lg hover:bg-gray-800 transition-colors duration-200"
                                 >
-                                 View More<span className='ml-1 text-lg'>👀</span> 
+                                 View More<span className='ml-1 text-lg'>🤠</span> 
                                 </Button>
                             ) : visibleProjects > INITIAL_VISIBLE_PROJECTS && (
                                 <Button
