@@ -104,7 +104,7 @@ const TechStack: React.FC = () => {
               </motion.div>
             ))}
           </div>
-          <div className="text-right mr-[-4px] mt-4 font-semibold text-lg">thank you. 🥺</div>
+          <div className="text-right mr-[-4px] mt-4 font-semibold text- white text-lg">thank you. 🥺</div>
         </section>
       </div>
     </div>
