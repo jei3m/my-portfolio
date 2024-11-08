@@ -21,7 +21,7 @@ const CVPage = () => {
 
   return (
     <div className="flex flex-col overflow-x-hidden overflow-y-auto min-h-screen bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
-     <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+     <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
     <div className="z-50 p-5 flex flex-col overflow-x-hidden overflow-hidden w-full h-full relative flex items-center justify-center">
       <Header />

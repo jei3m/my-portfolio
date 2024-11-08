@@ -92,7 +92,7 @@ const Email = () => {
 
   return (
     <div className="min-h-screen w-full bg-black bg-grid-white/[0.2] relative">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <Script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" strategy="beforeInteractive" />
       <motion.div 
         className="w-full min-h-screen flex items-center justify-center px-4 py-8"
