@@ -199,7 +199,7 @@ const Email = () => {
               Submit
             </motion.button>
           </form>
-          <div className="text-right mt-4 mb-[-14px] font-semibold text-md">please hmu. 🙁</div>
+          <div className="text-white text-right mt-4 mb-[-14px] font-semibold text-md">please hmu. 🙁</div>
 
         </div>
       </motion.div>
