@@ -28,7 +28,7 @@ const techStack: TechStackItem[] = techStackData.map(item => ({
 
 const TechStack: React.FC = () => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center z-50">
       <div className="max-w-[900px] mx-auto">
         <section className="py-4 px-4">
           <div className="max-w-6xl mx-auto">

@@ -92,6 +92,7 @@ const Email = () => {
 
   return (
     <div className="min-h-screen w-full bg-black bg-grid-white/[0.2] relative">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <Script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" strategy="beforeInteractive" />
       <motion.div 
         className="w-full min-h-screen flex items-center justify-center px-4 py-8"
@@ -101,7 +102,7 @@ const Email = () => {
         variants={containerVariants}
         style={{ fontFamily: '"Space Grotesk", "Noto Sans", sans-serif' }}
       >
-        <div className="w-full max-w-3xl bg-transparent">
+        <div className="w-full max-w-3xl bg-transparent z-50">
           <div className="flex items-center justify-between mb-8">
           <motion.h2
                         id="Email"
@@ -193,8 +194,6 @@ const Email = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
             >
               Submit
             </motion.button>
