@@ -60,7 +60,9 @@ export default function Profile() {
 
   return (
     <div className="text-white flex flex-col justify-center p-4 mt-[6rem]">
+      <motion.div variants={childVariants} initial="hidden" animate="visible">
       <div className="text-left mb-4 font-semibold text-lg">Hello! 🙂‍↕️</div>
+      </motion.div>
       <motion.div 
         className="max-w-[870px] bg-gray-900 rounded-lg shadow-xl border border-white/[0.5]"
         variants={containerVariants}
@@ -161,11 +163,13 @@ export default function Profile() {
               variants={childVariants}
             >
               <motion.div 
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 mt-1"
                 whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
               >
-                <Circle className="h-3 w-3 text-green-400 fill-current mr-[-2px]" />
-                <span className="text-sm text-gray-300">Ready to connect</span>
+                <Circle className="h-3 w-3 text-green-400 fill-current mr-[-3px]" />
+                <a href="mailto:justinmiguel.rys03@gmail.com">
+                <span className="text-md text-gray-300">justinmiguel.rys03@gmail.com</span>
+                </a>
               </motion.div>
               
               {/* <motion.div
