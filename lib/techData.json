@@ -12,7 +12,7 @@
   },
   {
     "title": "HTML & CSS",
-    "description": "Crafting semantic markup and stylish designs with modern HTML5 and CSS3 features.",
+    "description": "Crafting semantic markup and designs with modern HTML5 and CSS3.",
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
@@ -38,7 +38,7 @@
   },
   {
     "title": "IoT Development",
-    "description": "Creating embedded systems with Arduino and Raspberry Pi for innovative hardware solutions.",
+    "description": "Creating embedded systems with Arduino and Raspberry Pi.",
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/arduino-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/raspberrypi-colored.svg"
