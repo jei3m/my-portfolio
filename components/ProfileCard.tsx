@@ -167,9 +167,7 @@ export default function Profile() {
                 whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
               >
                 <Circle className="h-3 w-3 text-green-400 fill-current mr-[-3px]" />
-                <a href="mailto:justinmiguel.rys03@gmail.com">
                 <span className="text-md text-gray-300">justinmiguel.rys03@gmail.com</span>
-                </a>
               </motion.div>
               
               {/* <motion.div
