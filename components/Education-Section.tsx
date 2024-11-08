@@ -6,7 +6,6 @@ import { useState } from 'react';
 import { Reveal } from './custom-ui/reveal';
 import { Star } from "lucide-react";
 import { AnimatePresence, motion } from 'framer-motion';
-import Head from "next/head";
 import { DM_Serif_Text } from "next/font/google";
 
 
@@ -27,9 +26,9 @@ export default function Component() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
         >
-          <h1 className={`${dmSerifText.className} mb-4 text-4xl lg:text-4xl text-left z-80 text-white`}>
+          <h2 className={`${dmSerifText.className} mb-4 text-4xl lg:text-4xl text-left z-80 text-white`}>
             {isEducation ? 'Education' : 'Experience'}
-          </h1>
+          </h2>
         </Reveal>
 
         <AnimatePresence mode="wait">
@@ -107,6 +106,7 @@ export default function Component() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
           >
+            <span className="mr-1 text-2xl relative top-1">👉</span>
             <button
               onClick={toggleSection}
               className="group relative overflow-hidden rounded-full px-4 py-2 bg-white/20 hover:bg-white/10 border border-white transition-colors duration-200"

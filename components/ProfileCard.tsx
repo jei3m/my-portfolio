@@ -6,6 +6,12 @@ import { motion } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { FaRegEnvelope, FaFileLines, FaRegFileLines } from "react-icons/fa6"
+import { IBM_Plex_Serif } from "next/font/google";
+
+const ibmPlexSerif = IBM_Plex_Serif({
+  subsets: ["latin"],
+  weight: ["400","500","600", "700"], // or any other available weights
+});
 
 export default function Profile() {
   const containerVariants = {
@@ -78,7 +84,7 @@ export default function Profile() {
           </div>
           <div className="py-8 px-3 flex-grow">
             <motion.h1 
-              className="text-3xl leading-8 font-bold tracking-tight text-white sm:text-4xl"
+              className={`${ibmPlexSerif.className} text-4xl leading-8 font-semibold tracking-tight text-white md:text-5xl`}
               variants={childVariants}
             >
               Justin Miguel
@@ -94,7 +100,7 @@ export default function Profile() {
               className="mt-4 text-lg text-gray-300"
               variants={childVariants}
             >
-              A Computer Engineering student and Tech Enthusiast with a foundation in Web Development, IoT, and IT. <span className="text-2xl">👨🏻‍💻</span>
+              A Computer Engineering student and Tech Enthusiast with a foundation in Web Development, IoT, and IT.<span className="text-2xl">👨🏻‍💻</span>
             </motion.p>
             <motion.div 
               className="mt-5 flex space-x-4"
@@ -158,7 +164,7 @@ export default function Profile() {
                 className="flex items-center space-x-2"
                 whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
               >
-                <Circle className="h-3 w-3 text-green-400 fill-current" />
+                <Circle className="h-3 w-3 text-green-400 fill-current mr-[-2px]" />
                 <span className="text-sm text-gray-300">Ready to connect</span>
               </motion.div>
               
