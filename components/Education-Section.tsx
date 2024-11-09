@@ -21,7 +21,7 @@ export default function Component() {
     <section className="mt-2 text-white p-4">
       <div className="max-w-[870px] w-full mx-auto relative">
         {/* Header Section */}
-        <div className="flex justify-between items-center mb-6">
+        <div className="flex justify-between items-center mb-4">
           <Reveal
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
