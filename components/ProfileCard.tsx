@@ -99,7 +99,7 @@ export default function Profile() {
         <div className="text-left mb-4 font-semibold text-sm md:text-lg">Hello! 🙂‍↕️</div>
       </motion.div>
       <motion.div 
-        className="max-w-[900px] bg-gray-900 rounded-lg shadow-xl border border-white/[0.5]"
+        className="max-w-[870px] bg-gray-900 rounded-lg shadow-xl border border-white/[0.5]"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
