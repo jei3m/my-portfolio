@@ -11,7 +11,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
+    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full h-full bg-black bg-grid-neutral-800 relative flex items-center justify-center">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <Head>
         <link
