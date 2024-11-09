@@ -1,11 +1,14 @@
 [
     {
-      "school": "Freelancing",
-      "degree": "Web Developer",
-      "year": "July 2024 - September 2024",
-      "description": "Developed frontend and full stack websites using ReactJS and Firebase.",
-      "logo": "/JustinMiguel.png"
+        "title": "Freelancing",
+        "course": "Web Developer",
+        "school": "July 2024 - September 2024",
+        "logo": "/JustinMiguel.png",
+        "description": "Developed front-end and full-stack websites based on the client's needs.",
+        "skills": [
+         "ReactJS",
+         "Firebase"
+        ]
     }
 
 ]
-  

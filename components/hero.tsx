@@ -13,8 +13,6 @@ export default function Hero() {
   return (
     <div className="flex flex-col overflow-x-hidden overflow-hidden w-full h-full bg-black bg-grid-white/[0.2] relative flex items-center justify-center">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-
-
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
@@ -35,8 +33,6 @@ export default function Hero() {
           className="flex min-h-screen flex-col items-center justify-center px-4"
         >
           <div className="relative text-center max-w-5xl mx-auto">
-            {/* Decorative elements */}
-
 
             {/* Main heading */}
             <motion.div
@@ -68,7 +64,7 @@ export default function Hero() {
               className="mt-8 space-y-6"
             >
               <p className="text-lg md:text-xl text-zinc-400 max-w-xl mx-auto leading-relaxed  mt-[-10px]">
-               A Computer Engineering student who dreams big, aims high, and has goals to achieve.
+              A Computer Engineering student that bridge academic knowledge with real-world applications.              
               </p>
               
               {/* <div className="text-sm font-medium text-zinc-400 tracking-wide">

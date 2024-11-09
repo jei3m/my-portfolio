@@ -59,9 +59,8 @@ const TechStack: React.FC = () => {
                 key={index}
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
-                whileHover={{ scale: 1.070, transition: { duration: 0.2 } }}
               >
-                <Card className="bg-gray-900 border-white/[0.5] transition-all duration-300">
+                <Card className="bg-gray-900 border-white/[0.5] hover:scale-[1.05] transition-all duration-200">
                   <Reveal
                     key={index}
                     initial={{ opacity: 0, x: -50 }}

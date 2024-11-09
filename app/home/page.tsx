@@ -6,7 +6,7 @@ const Hero = dynamic(() => import("@/components/hero"));
 const Projects = dynamic(() => import("@/components/projects"));
 const Separator = dynamic(() => import("@/components/custom-ui/separator"));
 const Contact = dynamic(() => import("@/components/contact"));
-const Experiences = dynamic(() => import("@/components/Education"));
+const Experiences = dynamic(() => import("@/components/Experience"));
 const Aboutme = dynamic(() => import("@/components/TechStack"));
 const ProfileCard= dynamic(() => import("@/components/ProfileCard"));
 const Profile= dynamic(() => import("@/components/Profile"));
@@ -21,7 +21,7 @@ export default function Home() {
       {/* <Profile/> */}
       <ProfileCard/>
       <EducationSection />
-      {/* <Experiences /> */}
+      <Experiences/>
       <Projects />
       <Aboutme />
     </div>

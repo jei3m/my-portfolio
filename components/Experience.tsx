@@ -1,22 +1,14 @@
 "use client";
 import Image from "next/image";
-import educationItems from '@/lib/education.json';
-import achievementsItems from '@/lib/achievements.json';
-import { useState } from 'react';
+import experienceItems from '@/lib/experience.json';
 import { Reveal } from './custom-ui/reveal';
-import { Star } from "lucide-react";
 import { AnimatePresence, motion } from 'framer-motion';
 import { DM_Serif_Text } from "next/font/google";
+import { Badge } from "./custom-ui/badge";
 
 const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
 export default function Component() {
-  const [isEducation, setIsEducation] = useState(true);
-
-  const toggleSection = () => {
-    setIsEducation(!isEducation);
-  };
-
   return (
     <section className="mt-2 text-white p-4">
       <div className="max-w-[900px] w-full mx-auto relative">
@@ -27,41 +19,21 @@ export default function Component() {
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
           >
             <h2 className={`${dmSerifText.className} text-3xl lg:text-4xl text-white`}>
-              {isEducation ? 'Education' : 'Achievements'}
+              Experience
             </h2>
-          </Reveal>
-
-          <Reveal
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
-          >
-            <div className="flex items-center">
-              <span className="mr-2 text-xl relative hidden sm:block">👉</span>
-              <button
-                onClick={toggleSection}
-                className="group relative overflow-hidden rounded-full px-3 py-1.5 sm:px-4 sm:py-2 bg-white/20 hover:bg-white/10 border border-white transition-colors duration-200"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-200" />
-                <div className="relative flex items-center gap-2 text-zinc-100">
-                  <span className="text-sm font-medium">{isEducation ? 'Achievements' : 'Education'}</span>
-                  <Star className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover:text-purple-300 transition-colors duration-200" />
-                </div>
-                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500" />
-              </button>
-            </div>
           </Reveal>
         </div>
 
         {/* Content Section */}
         <AnimatePresence mode="wait">
           <motion.div
-            key={isEducation ? "education" : "achievements"}
+            key="experience"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
             exit={{ opacity: 0, x: -50, transition: { duration: 0.5 } }}
             className="space-y-4"
           >
-            {(isEducation ? educationItems : achievementsItems).map((item, index) => (
+            {experienceItems.map((item, index) => (
               <Reveal
                 key={index}
                 initial={{ opacity: 0, x: -50 }}
@@ -88,10 +60,10 @@ export default function Component() {
                       >
                         <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-1 sm:gap-0">
                           <h3 className="text-xl sm:text-2xl font-semibold">
-                            {item.school || item.school}
+                            {item.title}
                           </h3>
                           <p className="text-sm sm:text-md text-gray-400">
-                            {item.year}
+                            {item.school}
                           </p>
                         </div>
                       </Reveal>
@@ -101,7 +73,7 @@ export default function Component() {
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                       >
                         <p className="text-base sm:text-lg text-gray-300">
-                          {item.degree || item.degree}
+                          {item.course}
                         </p>
                       </Reveal>
 
@@ -112,6 +84,23 @@ export default function Component() {
                         <p className="text-sm sm:text-md text-gray-300 mt-2 whitespace-pre-line">
                           {item.description}
                         </p>
+                      </Reveal>
+
+                      {/* Skills Badges */}
+                      <Reveal
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
+                      >
+                        <div className="mt-2 flex flex-wrap gap-2">
+                          {item.skills.map((skill, skillIndex) => (
+                            <Badge
+                              key={skillIndex}
+                              className="rounded-md px-1 mt-1"
+                            >
+                              {skill}
+                            </Badge>
+                          ))}
+                        </div>
                       </Reveal>
                     </div>
                   </div>

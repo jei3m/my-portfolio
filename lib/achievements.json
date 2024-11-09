@@ -1,0 +1,25 @@
+[
+    {
+      "school": "Holy Angel University",
+      "degree": "President's List",
+      "year": "",
+      "description": "• Second Semester, SY 2023-2024 \n • Second Semester, SY 2021-2022",
+      "logo": "/HAU.png"
+    },
+    {
+      "school": "Holy Angel University",
+      "degree": "Dean's List",
+      "year": "",
+      "description": "• First Semester, SY 2021-2022",
+      "logo": "/HAU.png"
+    },
+    {
+      "school": "St. Augustine Academy of Pampanga",
+      "degree": "With Honors",
+      "year": "",
+      "description": "• SY 2020-2021 \n • SY 2019-2020",
+      "logo": "/SAAP.png"
+    }
+
+]
+  
