@@ -41,7 +41,7 @@ export default function Hero() {
               transition={{ delay: 0.6, duration: 0.8 }}
             >
               <h2 
-                className="mb-2 text-2xl md:text-3xl font-light text-zinc-300"
+                className="mb-1 text-2xl md:text-3xl font-light text-zinc-300"
                 style={{ fontFamily: "Inter" }}
               >
                 Welcome to the portfolio of
