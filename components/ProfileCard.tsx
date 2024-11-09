@@ -94,9 +94,9 @@ export default function Profile() {
   }
 
   return (
-    <div className="text-white flex flex-col justify-center p-4 mt-[6rem] z-50">
+    <div className="text-white flex flex-col justify-center p-4 mt-[4rem] z-50">
       <motion.div variants={childVariants} initial="hidden" animate="visible">
-        <div className="text-left mb-4 font-semibold text-lg">Hello! 🙂‍↕️</div>
+        <div className="text-left mb-4 font-semibold text-sm md:text-lg">Hello! 🙂‍↕️</div>
       </motion.div>
       <motion.div 
         className="max-w-[870px] bg-gray-900 rounded-lg shadow-xl border border-white/[0.5]"

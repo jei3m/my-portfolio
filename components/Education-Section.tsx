@@ -102,11 +102,12 @@ export default function Component() {
         </AnimatePresence>
 
         <div className="absolute top-0 right-0">
-          <Reveal
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
-          >
-            <span className="mr-1 text-2xl relative top-1">👉</span>
+        <Reveal
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
+        >
+          <div className="flex items-center">
+            <span className="mr-2 text-2xl relative hidden sm:block">👉</span>
             <button
               onClick={toggleSection}
               className="group relative overflow-hidden rounded-full px-4 py-2 bg-white/20 hover:bg-white/10 border border-white transition-colors duration-200"
@@ -116,9 +117,11 @@ export default function Component() {
                 <span className="text-sm font-medium">{isEducation ? 'Experience' : 'Education'}</span>
                 <Star className="w-5 h-5 text-white group-hover:text-purple-300 transition-colors duration-200" />
               </div>
-              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500" /> 
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-500" />
             </button>
-          </Reveal>
+          </div>
+        </Reveal>
+
         </div>
       </div>
     </section>
