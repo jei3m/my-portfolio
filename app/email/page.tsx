@@ -102,11 +102,11 @@ const Email = () => {
         variants={containerVariants}
         style={{ fontFamily: '"Space Grotesk", "Noto Sans", sans-serif' }}
       >
-        <div className="w-full max-w-3xl bg-transparent z-50">
-          <div className="flex items-center justify-between mb-8">
+        <div className="mt-[-2rem] w-full max-w-3xl bg-transparent z-50">
+          <div className="flex items-center justify-between mb-6">
           <motion.h2
                         id="Email"
-                        className={`${dmSerifText.className} mb-[-10px] text-left text-4xl text-white`}                        
+                        className={`${dmSerifText.className} text-left text-4xl text-white`}                        
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
@@ -115,10 +115,10 @@ const Email = () => {
                         }}
                     >
                         Email Me
-                    </motion.h2>
+            </motion.h2>
 
             <motion.div
-              className="mb-[-14px] text-gray-600 cursor-pointer"
+              className="mb-[-4px] text-gray-600 cursor-pointer text-xl"
               whileHover={{ scale: 1.1, rotate: 90 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Close"
@@ -198,7 +198,7 @@ const Email = () => {
               Submit
             </motion.button>
           </form>
-          <div className="text-white text-right mt-4 mb-[-14px] font-semibold text-md">please hmu. 🙁</div>
+          {/* <div className="text-white text-right mt-4 mb-[-14px] font-semibold text-md">please hmu. 🙁</div> */}
 
         </div>
       </motion.div>
