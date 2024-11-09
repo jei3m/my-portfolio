@@ -31,7 +31,6 @@ export default function Component() {
             </h2>
           </Reveal>
 
-          {/* Toggle Button - Always on right */}
           <Reveal
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
