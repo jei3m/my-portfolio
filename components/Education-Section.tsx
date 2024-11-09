@@ -46,7 +46,7 @@ export default function Component() {
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
               >
                 <div
-                  className="bg-gray-900 p-4 rounded-lg shadow-lg flex items-center justify-between border border-white/[0.5] hover:border-blue-500 hover:scale-105 transition-all duration-300 cursor-pointer"
+                  className="bg-gray-900 p-4 rounded-lg shadow-lg flex items-center justify-between border border-white/[0.5] hover:scale-105 transition-all duration-300 cursor-pointer"
                 >
                   <div className="flex-grow">
                     <Reveal

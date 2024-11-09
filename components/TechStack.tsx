@@ -59,9 +59,9 @@ const TechStack: React.FC = () => {
                 key={index}
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
-                whileHover={{ scale: 1.06, transition: { duration: 0.2 } }}
+                whileHover={{ scale: 1.070, transition: { duration: 0.2 } }}
               >
-                <Card className="bg-gray-900 border-white/[0.5] hover:border-blue-500 hover:scale-104 transition-all duration-300">
+                <Card className="bg-gray-900 border-white/[0.5] transition-all duration-300">
                   <Reveal
                     key={index}
                     initial={{ opacity: 0, x: -50 }}
@@ -104,7 +104,7 @@ const TechStack: React.FC = () => {
               </motion.div>
             ))}
           </div>
-          <div className="text-right mr-[-4px] mt-4 font-semibold text-white text-sm md:text-lg">thank you. 🥺</div>
+          {/* <div className="text-right mr-[-4px] mt-4 font-semibold text-white text-sm md:text-lg">thank you. 🥺</div> */}
         </section>
       </div>
     </div>
