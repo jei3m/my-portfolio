@@ -2,8 +2,7 @@
 import { useState } from 'react';
 import projects from '@/lib/projects.json';
 import { Reveal } from './custom-ui/reveal';
-import { ProjectCard3d } from './custom-ui/ProjectCard';
-import Head from "next/head";
+import { ProjectCard3d } from './custom-ui/project-card';
 import { Button } from './custom-ui/button';
 import { motion } from 'framer-motion';
 import { DM_Serif_Text } from "next/font/google";
@@ -80,14 +79,14 @@ export default function Projects() {
                                     onClick={showMore}
                                     className="px-6 py-2 bg-gray-600 text-white text-sm rounded-lg hover:bg-gray-800 transition-colors duration-200"
                                 >
-                                 View More<span className='ml-1 text-lg'>🤠</span> 
+                                 View More... 
                                 </Button>
                             ) : visibleProjects > INITIAL_VISIBLE_PROJECTS && (
                                 <Button
                                     onClick={showLess}
                                     className="px-6 py-2 bg-gray-600 text-white text-sm rounded-lg hover:bg-gray-800 transition-colors duration-200"
                                 >
-                                    Show Less<span className='ml-1 text-lg'>🫣</span>
+                                    Show Less...
                                 </Button>
                             )}
                         </Reveal>

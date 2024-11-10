@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import { Sparkles, ChevronDown } from "lucide-react";
-import { ShootingStars } from "./custom-ui/shooting-stars";
 import { StarsBackground } from "./custom-ui/stars-background";
 
 export default function Hero() {

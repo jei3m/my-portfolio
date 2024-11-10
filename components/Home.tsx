@@ -1,14 +1,12 @@
-import EducationSection from "@/components/Education-Section";
 import dynamic from "next/dynamic";
 
-const Hero = dynamic(() => import("@/components/hero"));
-const Projects = dynamic(() => import("@/components/projects"));
+const Projects = dynamic(() => import("@/components/Projects"));
 const Separator = dynamic(() => import("@/components/custom-ui/separator"));
-const Contact = dynamic(() => import("@/components/contact"));
 const Experiences = dynamic(() => import("@/components/Experience"));
 const TechStack = dynamic(() => import("@/components/TechStack"));
 const ProfileCard = dynamic(() => import("@/components/ProfileCard"));
-import Footer from "@/components/Footer";
+const Footer = dynamic(() => import("@/components/Footer"));
+const EducationSection = dynamic(() => import("@/components/Education-Section"));
 
 export default function Home() {
   return (

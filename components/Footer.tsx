@@ -1,11 +1,8 @@
 "use client";
 import React from 'react';
-import Link from 'next/link';
 import { Mail, FileText } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { ShootingStars } from "./custom-ui/shooting-stars";
-import { StarsBackground } from "./custom-ui/stars-background";
 import { DM_Serif_Text } from "next/font/google";
 import EmailModal from './custom-ui/email-modal';
 import { useState } from 'react';

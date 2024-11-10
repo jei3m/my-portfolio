@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-const Hero = dynamic(() => import("@/components/hero"));
+const Hero = dynamic(() => import("@/components/Hero"));
 const Home = dynamic(() => import("@/components/Home"));
 import Seperator from "@/components/custom-ui/separator";
 
