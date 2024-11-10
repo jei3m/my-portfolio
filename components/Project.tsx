@@ -125,7 +125,7 @@ const ProjectsCarousel = () => {
                                 <button
                                     key={index}
                                     onClick={() => setCurrentIndex(index * projectsPerPage)}
-                                    className={`w-2 h-2 rounded-full transition-colors ${
+                                    className={`mt-1 md:mt-[-1px] w-2 h-2 rounded-full transition-colors ${
                                         index === Math.floor(currentIndex / projectsPerPage)
                                             ? 'bg-white'
                                             : 'bg-white/30'
