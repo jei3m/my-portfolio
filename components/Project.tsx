@@ -24,6 +24,7 @@ export default function Projects() {
     };
     
     return (
+        <div>
         <div className="py-2 max-w-[900px] flex flex-col w-full mx-auto relative flex items-center justify-center">
             <div className="p-4 flex flex-col w-full mx-auto relative flex items-center justify-center">
                 <section id="projects" className="flex flex-col items-start justify-center w-full">
@@ -93,6 +94,7 @@ export default function Projects() {
                     </div>
                 </section>
             </div>
+        </div>
         </div>
     );
 }
