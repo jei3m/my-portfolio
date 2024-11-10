@@ -1,18 +1,14 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Head from "next/head";
-import Link from "next/link";
-import { Sparkles } from "lucide-react";
+import { Sparkles, ChevronDown } from "lucide-react";
+import { ShootingStars } from "./custom-ui/shooting-stars";
+import { StarsBackground } from "./custom-ui/stars-background";
 
 export default function Hero() {
-  useEffect(() => {
-    window.scrollTo(0, document.body.scrollHeight);
-  }, []);
-
   return (
-    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full h-full bg-black bg-grid-neutral-800 relative flex items-center justify-center">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full h-full relative flex items-center justify-center bg-neutral-900 z-50">
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
@@ -63,39 +59,38 @@ export default function Hero() {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="mt-8 space-y-6"
             >
-              <p className="text-lg md:text-xl text-zinc-400 max-w-xl mx-auto leading-relaxed  mt-[-10px]">
-              A Computer Engineering student that bridge academic knowledge with real-world applications.              
+              <p className="text-lg md:text-xl text-zinc-400 max-w-xl mx-auto leading-relaxed mt-[-10px]">
+                A Computer Engineering student that bridge academic knowledge with real-world applications.              
               </p>
-              
-              {/* <div className="text-sm font-medium text-zinc-400 tracking-wide">
-                A PORTFOLIO SHOWCASE WITH NEXT.JS
-              </div> */}
             </motion.div>
 
-            {/* CTA Button */}
+            {/* Scroll Down Indicator */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="mt-6"
+              className="mt-12"
             >
-              <Link href="/home">
-              <button className="group relative overflow-hidden rounded-full px-8 py-3 bg-white/20 hover:bg-white/10 border border-white transition-colors duration-300">                  {/* Button gradient border */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                  
-                  <div className="relative flex items-center gap-2 text-zinc-100">
-                    <span className="text-base font-medium">Explore Portfolio</span>
-                    <Sparkles className="w-4 h-4 text-purple-400 group-hover:text-purple-300 transition-colors duration-300" />
-                  </div>
-                  
-                  {/* Animated highlight */}
-                  <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000" />
-                </button>
-              </Link>
+              <motion.div
+                animate={{ y: [0, 8, 0] }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="flex flex-col items-center text-zinc-400 cursor-pointer hover:text-zinc-200 transition-colors duration-300"
+              >
+                <span className="text-md font-medium mb-1">Scroll Down</span>
+                <div className="flex flex-col items-center gap-1">
+                  <ChevronDown className="w-5 h-5" />
+                  <ChevronDown className="w-5 h-5 -mt-3" />
+                </div>
+              </motion.div>
             </motion.div>
           </div>
         </motion.div>
       </div>
+      <StarsBackground/>
     </div>
   );
 }

@@ -26,9 +26,11 @@ export default function Component() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
           >
-            <h2 className={`${dmSerifText.className} text-3xl lg:text-4xl text-white`}>
+            <h2 className={`${dmSerifText.className} mb-2 text-3xl lg:text-4xl text-white`}>
               {isEducation ? 'Education' : 'Achievements'}
             </h2>
+            {/* <p className="text-sm md:text-lg text-gray-400 mt-2">A summary of my education and achievements</p> */}
+
           </Reveal>
 
           <Reveal

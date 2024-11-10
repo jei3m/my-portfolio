@@ -34,7 +34,7 @@ export default function Projects() {
                 >
                     <motion.h2
                         id="projects"
-                        className={`${dmSerifText.className} text-left mb-[-22px] text-3xl lg:text-4xl z-80 text-white`}                        
+                        className={`${dmSerifText.className} mb-[-22px] text-left text-3xl lg:text-4xl z-80 text-white`}                        
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
@@ -44,6 +44,8 @@ export default function Projects() {
                     >
                         Projects
                     </motion.h2>
+                    {/* <p className="text-sm md:text-lg text-gray-400 mt-2 mb-[-22px]">What I've worked on and what I'm currently working on</p> */}
+
                     </Reveal>
 
                     <div className="flex flex-wrap justify-center gap-x-7 max-w-screen-lg sm:grid sm:grid-cols-2 sm:gap-6 w-full">

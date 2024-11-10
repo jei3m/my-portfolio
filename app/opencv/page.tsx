@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from 'react';
 import Head from 'next/head';
-import Header from '@/components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
@@ -28,18 +27,19 @@ const CVPage = () => {
 
       {/* Scrollable content layer */}
       <div className="relative z-10 w-full min-h-screen">
-        <div className="p-5 flex flex-col w-full">
-          <Header />
+        <div className="p-2 flex flex-col w-full">
+
           <Head>
             <title>My CV</title>
             <meta name="description" content="View my professional CV" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
           </Head>
 
-          <main className="flex-grow container mx-auto px-4 py-20 flex flex-col items-center">
+          <main className="max-w-[800px] flex-grow container mx-auto px-4 py-10 flex flex-col">
+            <div className="flex items-center justify-between mb-4">
             <motion.h2
               id="OpenCV"
-              className={`${dmSerifText.className} mt-2 text-left mb-[-2px] text-3xl sm:text-4xl lg:text-4xl z-80 text-white`}                        
+              className={`${dmSerifText.className} mt-2 text-left mb-[4px] text-3xl sm:text-4xl lg:text-4xl z-80 text-white`}                        
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -47,14 +47,27 @@ const CVPage = () => {
                 ease: "easeOut"
               }}
             >
-              My Curriculum Vitae
+             Curriculum Vitae
             </motion.h2>
-            <br />
+
+            <motion.div
+              className="mb-[1px] text-gray-600 cursor-pointer text-xl"
+              whileHover={{ scale: 1.1, rotate: 90 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Close"
+              onClick={() => window.location.href = '/home#profile'}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 256 256">
+                <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+              </svg>
+            </motion.div>
+            </div>
+  
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-3xl"
+              className="mx-auto bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-[800px]"
             >
               <div className="relative w-full h-full" style={{ paddingBottom: "141.4%" }}>
                 <iframe

@@ -28,7 +28,7 @@ const techStack: TechStackItem[] = techStackData.map(item => ({
 
 const TechStack: React.FC = () => {
   return (
-    <div className="flex justify-center items-center z-50">
+    <div className="flex justify-center items-center">
       <div className="max-w-[900px] mx-auto">
         <section className="py-4 px-4">
           <div className="max-w-6xl mx-auto">
@@ -37,8 +37,7 @@ const TechStack: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
               >
                     <motion.h2
-                        id="Tech"
-                        className={`${dmSerifText.className} text-left mb-[-1px] text-3xl lg:text-4xl z-80 text-white`}                        
+                        className={`${dmSerifText.className} text-left text-3xl lg:text-4xl z-80 text-white`}                        
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
@@ -48,11 +47,12 @@ const TechStack: React.FC = () => {
                     >
                         Technologies
                     </motion.h2>
+                    {/* <p className="text-sm md:text-lg text-gray-400 mt-2">My current skillset, but that'll add up in the future</p> */}
             </Reveal>
           </div>
         </section>
 
-        <section className="px-4 pb-20">
+        <section className="px-4 pb-10">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {techStack.map((tech, index) => (
               <motion.div

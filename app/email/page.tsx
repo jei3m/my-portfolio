@@ -3,7 +3,6 @@ import Script from 'next/script';
 import { useState, ChangeEvent, FormEvent } from 'react';
 import Swal from 'sweetalert2';
 import { motion, AnimatePresence } from 'framer-motion';
-import Header from '@/components/Header'; 
 import { DM_Serif_Text } from "next/font/google";
 
 const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
@@ -91,8 +90,7 @@ const Email = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-black bg-grid-neutral-800 relative">
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+    <div className="min-h-screen w-full bg-neutral-900 relative">
       <Script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" strategy="beforeInteractive" />
       <motion.div 
         className="w-full min-h-screen flex items-center justify-center px-4 py-8"
@@ -122,9 +120,9 @@ const Email = () => {
               whileHover={{ scale: 1.1, rotate: 90 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Close"
-              onClick={() => window.location.href = '/home'}
+              onClick={() => window.location.href = '/home#profile'}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 256 256">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 256 256">
                 <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
               </svg>
             </motion.div>
