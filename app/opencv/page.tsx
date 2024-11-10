@@ -21,8 +21,7 @@ const CVPage = () => {
     <main className="relative min-h-screen">
       {/* Fixed background layer */}
       <div className="fixed inset-0 w-full h-full">
-        <div className="w-full h-full bg-black bg-grid-neutral-800" />
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+        <div className="w-full h-full bg-neutral-950 bg-grid-neutral-800" />
       </div>
 
       {/* Scrollable content layer */}

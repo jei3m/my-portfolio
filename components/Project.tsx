@@ -77,14 +77,14 @@ export default function Projects() {
                             {visibleProjects < projects.length ? (
                                 <Button
                                     onClick={showMore}
-                                    className="px-6 py-2 bg-gray-600 text-white text-sm rounded-lg hover:bg-gray-800 transition-colors duration-200"
+                                    className="px-6 py-1 bg-white text-black text-md rounded-lg hover:bg-black hover:text-white border hover:border-white transition-colors duration-200"
                                 >
-                                 View More... 
+                                 Show More... 
                                 </Button>
                             ) : visibleProjects > INITIAL_VISIBLE_PROJECTS && (
                                 <Button
                                     onClick={showLess}
-                                    className="px-6 py-2 bg-gray-600 text-white text-sm rounded-lg hover:bg-gray-800 transition-colors duration-200"
+                                    className="px-6 py-1 bg-white text-black text-md rounded-lg hover:bg-black hover:text-white border hover:border-white transition-colors duration-200"
                                 >
                                     Show Less...
                                 </Button>
