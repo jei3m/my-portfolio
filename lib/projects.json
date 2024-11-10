@@ -58,7 +58,7 @@
 
     {
         "title": "Pogi Typings",
-        "description": "A React JS-based website integrated with Gemini AI to correct punctuation and spelling while maintaining a Tagalog and English context.",
+        "description": "A React JS website with Gemini AI to correct punctuation and spelling of Taglish sentences.",
         "type": "Personal Project",
         "imageUrl": "/assets/img/pogitypings.png",
         "githubUrl": "https://github.com/jei3m/pogi-typings",
@@ -72,7 +72,7 @@
 
     {
         "title": "Life Expectancy",
-        "description": "A requirement for our Software Design Laboratory course. Utilizing data science algorithms to analyze and predict based on the dataset.",
+        "description": "Requirement for our Software Design course. Using data science to analyze and predict from the dataset.",
         "type": "School Project",
         "imageUrl": "/assets/img/life.png",
         "githubUrl": "https://github.com/jei3m/life-expectancy",

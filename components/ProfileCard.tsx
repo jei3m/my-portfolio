@@ -96,7 +96,7 @@ export default function ProfileCard() {
 
   return (
     <>
-      <div id="profile" className="text-white flex flex-col mx-auto justify-center p-4 mt-[3.8rem] z-50">
+      <div id="profile" className="text-white flex flex-col mx-auto justify-center p-4 mt-[2rem] z-50">
         <motion.div variants={childVariants} initial="hidden" animate="visible">
           <div className="text-left mb-4 font-semibold text-sm md:text-lg">Hello! 🙂‍↕️</div>
         </motion.div>

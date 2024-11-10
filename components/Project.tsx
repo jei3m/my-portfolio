@@ -63,9 +63,9 @@ const ProjectsCarousel = () => {
 
                     <div className="relative">
                         {/* Navigation Buttons */}
-                        <button 
+                        {/* <button 
                             onClick={prevSlide}
-                            className="absolute left-0 md:left-[-60px] top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white hover:bg-white/40 transition-colors z-10"
+                            className="absolute left-0 lg:left-[-60px] top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white hover:bg-white/40 transition-colors z-10"
                             aria-label="Previous projects"
                         >
                             <ChevronLeft className="w-7 h-7 text-black" />
@@ -73,18 +73,18 @@ const ProjectsCarousel = () => {
                         
                         <button 
                             onClick={nextSlide}
-                            className="absolute right-0 md:right-[-60px] top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white hover:bg-white/40 transition-colors z-10"
+                            className="absolute right-0 lg:right-[-60px] top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white hover:bg-white/40 transition-colors z-10"
                             aria-label="Next projects"
                         >
                             <ChevronRight className="w-7 h-7 text-black" />
-                        </button>
+                        </button> */}
 
                         {/* Projects Container */}
                         <div className={`
                             flex justify-center 
                             ${isMobile ? 'gap-0' : 'gap-6'} 
                             transition-all duration-500 ease-in-out
-                            mx-8 md:mx-0
+                            mx-5 lg:mx-0
                         `}>
                             {displayedProjects.map((project, index) => (
                                 <Reveal
@@ -111,7 +111,16 @@ const ProjectsCarousel = () => {
                         </div>
 
                         {/* Pagination Dots */}
-                        <div className="flex justify-center gap-2 mt-8">
+                        <div className="flex justify-center gap-2 mt-[-20px] md:mt-8">
+
+                        <button 
+                            onClick={prevSlide}
+                            className="mt-2 md:mt-0 mr-2 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white hover:bg-white/40 transition-colors z-10"
+                            aria-label="Previous projects"
+                        >
+                            <ChevronLeft className="w-7 h-7 text-black" />
+                        </button>
+                            
                             {Array.from({ length: Math.ceil(projects.length / projectsPerPage) }).map((_, index) => (
                                 <button
                                     key={index}
@@ -124,6 +133,15 @@ const ProjectsCarousel = () => {
                                     aria-label={`Go to slide ${index + 1}`}
                                 />
                             ))}
+
+                       <button 
+                            onClick={nextSlide}
+                            className="mt-2 md:mt-0 ml-2 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white hover:bg-white/40 transition-colors z-10"
+                            aria-label="Next projects"
+                        >
+                            <ChevronRight className="w-7 h-7 text-black" />
+                        </button>
+
                         </div>
                     </div>
                 </section>
