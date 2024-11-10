@@ -46,7 +46,7 @@ const ProjectsCarousel = () => {
     const displayedProjects = projects.slice(currentIndex, currentIndex + projectsPerPage);
 
     return (
-        <div className="py-10 bg-neutral-900">
+        <div className="py-10 bg-gray/10 backdrop-blur-sm">
             <div className="max-w-[920px] mx-auto px-2 flex flex-col items-center justify-center relative">
                 <section id="projects" className="w-full">
                     <Reveal

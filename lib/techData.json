@@ -25,12 +25,12 @@
   },
   {
     "title": "Python",
-    "description": "Implementing machine learning algorithms for data analysis and predictive modeling.",
+    "description": "For machine learning algorithms for data analysis and predictive modeling.",
     "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg"
   },
   {
     "title": "Firebase & Supabase",
-    "description": "Implementing real-time databases, authentication, and cloud functions.",
+    "description": "For real-time databases, authentication, and cloud functions.",
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg"
@@ -38,7 +38,7 @@
   },
   {
     "title": "IoT Development",
-    "description": "Creating embedded systems with Arduino and Raspberry Pi.",
+    "description": "Developing embedded systems and IoT devices with Arduino and Raspberry Pi.",
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/arduino-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/raspberrypi-colored.svg"
@@ -46,7 +46,7 @@
   },
   {
     "title": "AI Integration",
-    "description": "Implementing AI capabilities through API inferences and local models like Ollama.",
+    "description": "Implementing AI through API inferences and local models like Ollama.",
     "isLucideIcon": true,
     "LucideIcon": "Brain"
   }

@@ -21,9 +21,9 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
     return (
         <CardContainer className="inter-var w-full">
             <CardBody 
-                className="md:mb-[-26px] bg-gray-900 relative group/card dark:hover:shadow-2xl dark:hover:shadow-gray-500/[0.1] border-1 border-white/[0.4] w-full max-w-[430px] h-[400px] sm:h-[450px] lg:h-[500px] mx-auto rounded-xl p-4 sm:p-5 lg:p-6 text-white"
+                className="md:mb-[-26px] bg-gray-900 relative group/card hover:shadow-2xl hover:shadow-gray-500/[0.1] border-1 border-white/[0.4] w-full max-w-[430px] h-[400px] sm:h-[450px] lg:h-[500px] mx-auto rounded-xl p-4 sm:p-5 lg:p-6 text-white"
             >
-                <div className="flex flex-col h-full gap-2 sm:gap-3">
+                <div className="flex flex-col h-full">
                     <CardItem translateZ="50" className="w-full">
                         <AspectRatio ratio={16 / 9} className="bg-muted">
                             <Image
@@ -38,14 +38,14 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
                     
                         <CardItem
                             as="h3"
-                            translateZ="60"
-                            className="scroll-m-20 text-lg sm:text-xl lg:text-2xl font-semibold tracking-tight"
+                            translateZ="50"
+                            className="mt-2 text-lg sm:text-xl lg:text-2xl font-semibold tracking-tight"
                         >
                             {title}
                         </CardItem>
                         <CardItem
                             as="p"
-                            translateZ="60"
+                            translateZ="50"
                             className="text-xs sm:text-sm text-gray-400"
                         >
                             {type}
@@ -60,7 +60,7 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
                         
                         {skills && (
                             <CardItem
-                                translateZ="40"
+                                translateZ="50"
                                 className="flex gap-1 sm:gap-1.5 flex-wrap mt-2 sm:mt-3"
                             >
                                 {skills.map((skill) => (
@@ -76,7 +76,7 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
                         )}
                     
                         <CardItem
-                            translateZ={30}
+                            translateZ={34}
                             className="w-auto flex flex-row justify-between items-center mt-auto"
                         >
                             {githubUrl && (

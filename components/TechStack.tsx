@@ -1,9 +1,9 @@
 import React from 'react';
 import { Brain } from 'lucide-react';
-import { Card, CardHeader, CardContent } from './custom-ui/card';
-import techStackData from '@/lib/techData.json'
+import { CardContainer, CardBody, CardItem } from "./custom-ui/3d-card2";
 import Image from 'next/image';
 import { DM_Serif_Text } from "next/font/google";
+import techStackData from '@/lib/techData.json';
 
 const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
@@ -24,14 +24,13 @@ const techStack: TechStackItem[] = techStackData.map(item => ({
 const TechStack: React.FC = () => {
   return (
     <div className="relative py-24 mb-[2rem]">
-
       <div className="relative max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
-        <div className="text-center mb-4">
-          <h2 className={`${dmSerifText.className} text-4xl lg:text-5xl text-white mb-2`}>
-           Highlight of Technologies
+        <div className="text-center">
+          <h2 className={`${dmSerifText.className} text-3xl lg:text-5xl text-white mb-2`}>
+            Highlight of Technologies
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-sm md:text-lg text-gray-400">
+          <p className="mb-[-10px] mt-4 max-w-2xl mx-auto text-sm md:text-lg text-gray-400">
             My current skill set that&apos;s constantly evolving.
           </p>
         </div>
@@ -39,15 +38,15 @@ const TechStack: React.FC = () => {
         {/* Tech Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-5 mb-[-4rem]">
           {techStack.map((tech, index) => (
-            <div
-              key={index}
-              className="group relative"
-            >
-              <Card className="relative h-full bg-gray-900 border-white/[0.5] hover:scale-[1.05] transition-all duration-200">
-                <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                  <div className="flex gap-2 bg-gray-800 p-2 rounded-lg">
+            <CardContainer key={index} className="mt-[-10px] mb-2 w-full h-auto">
+              <CardBody className="mb-[-76px] relative w-full h-full bg-gray-900 border border-white/[0.4] rounded-xl hover:scale-[1.02] hover:shadow-2xl hover:shadow-gray-500/[0.1] transition-all duration-300 flex flex-col">
+                <CardItem
+                  translateZ="64"
+                  className="flex flex-row items-center gap-4 p-6 pb-2"
+                >
+                  <div className="flex-shrink-0 flex gap-2 bg-gray-800 p-2 rounded-lg">
                     {tech.isLucideIcon && tech.LucideIcon ? (
-                      <tech.LucideIcon className="w-6 h-6 text-white" />
+                      <tech.LucideIcon className="w-7 h-7 text-white" />
                     ) : tech.icons ? (
                       tech.icons.map((icon, i) => (
                         <Image
@@ -55,8 +54,8 @@ const TechStack: React.FC = () => {
                           src={icon}
                           alt={`${tech.title} icon ${i + 1}`}
                           className="w-7 h-7"
-                          width={20}
-                          height={20}
+                          width={30}
+                          height={30}
                         />
                       ))
                     ) : (
@@ -64,22 +63,29 @@ const TechStack: React.FC = () => {
                         src={tech.icon!}
                         alt={`${tech.title} icon`}
                         className="w-7 h-7"
-                        width={20}
-                        height={20}
+                        width={30}
+                        height={30}
                       />
                     )}
                   </div>
-                  <h3 className="text-xl font-semibold text-white">
+                  <CardItem
+                    translateZ="0"
+                    as="h3"
+                    className="text-xl font-semibold text-white truncate"
+                  >
                     {tech.title}
-                  </h3>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-white/80">
+                  </CardItem>
+                </CardItem>
+                <CardItem
+                  translateZ="60"
+                  className="flex-1 p-6 pt-2 overflow-hidden"
+                >
+                  <p className="text-white/80 line-clamp-3">
                     {tech.description}
                   </p>
-                </CardContent>
-              </Card>
-            </div>
+                </CardItem>
+              </CardBody>
+            </CardContainer>
           ))}
         </div>
       </div>
