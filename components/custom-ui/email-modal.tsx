@@ -138,7 +138,7 @@ const EmailModal: React.FC<EmailModalProps> = ({ isOpen, onClose }) => {
           onClick={onClose}
         >
           <motion.div 
-            className="w-full max-w-3xl bg-neutral-900 p-5 rounded-xl shadow-2xl max-h-[80vh] overflow-y-auto"
+            className="w-full max-w-3xl bg-neutral-800 p-5 rounded-xl shadow-2xl max-h-[80vh] overflow-y-auto"
             variants={modalVariants}
             onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
@@ -176,7 +176,7 @@ const EmailModal: React.FC<EmailModalProps> = ({ isOpen, onClose }) => {
                 <input
                   name="name"
                   placeholder="Name"
-                  className="form-input w-full rounded-lg bg-neutral-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4 transform-gpu transition-transform duration-200 ease-in-out hover:scale-[1.01] focus:scale-[1.01]"
+                  className="form-input w-full rounded-lg bg-neutral-700 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4 transform-gpu transition-transform duration-200 ease-in-out hover:scale-[1.01] focus:scale-[1.01]"
                   type="text"
                   value={formData.name}
                   onChange={handleChange}
@@ -191,7 +191,7 @@ const EmailModal: React.FC<EmailModalProps> = ({ isOpen, onClose }) => {
                 <input
                   name="email"
                   placeholder="Email"
-                  className="form-input w-full rounded-lg bg-neutral-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4 transform-gpu transition-transform duration-200 ease-in-out hover:scale-[1.01] focus:scale-[1.01]"
+                  className="form-input w-full rounded-lg bg-neutral-700 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4 transform-gpu transition-transform duration-200 ease-in-out hover:scale-[1.01] focus:scale-[1.01]"
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
@@ -206,7 +206,7 @@ const EmailModal: React.FC<EmailModalProps> = ({ isOpen, onClose }) => {
                 <textarea
                   name="message"
                   placeholder="Message"
-                  className="form-input w-full rounded-lg bg-neutral-800 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4 min-h-[180px] max-h-[180px] h-auto resize-y overflow-y-auto transform-gpu transition-transform duration-200 ease-in-out hover:scale-[1.01] focus:scale-[1.01]"
+                  className="form-input w-full rounded-lg bg-neutral-700 text-gray-300 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 p-4 min-h-[180px] max-h-[180px] h-auto resize-y overflow-y-auto transform-gpu transition-transform duration-200 ease-in-out hover:scale-[1.01] focus:scale-[1.01]"
                   value={formData.message}
                   onChange={handleChange}
                   required

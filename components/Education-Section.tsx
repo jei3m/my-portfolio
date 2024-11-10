@@ -59,8 +59,8 @@ export default function Component() {
           <motion.div
             key={isEducation ? "education" : "achievements"}
             initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
-            exit={{ opacity: 0, x: -50, transition: { duration: 0.5 } }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 0.3 } }}
+            exit={{ opacity: 0, x: -50, transition: { duration: 0.3 } }}
             className="space-y-4"
           >
             {(isEducation ? educationItems : achievementsItems).map((item, index) => (
@@ -86,7 +86,7 @@ export default function Component() {
                     <div className="flex-grow w-full">
                       <Reveal
                         initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.2 } }}
+                        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                       >
                         <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-1 sm:gap-0">
                           <h3 className="text-xl sm:text-2xl font-semibold">

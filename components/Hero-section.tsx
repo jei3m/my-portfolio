@@ -7,7 +7,7 @@ import { StarsBackground } from "./custom-ui/stars-background";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full h-full relative flex items-center justify-center bg-neutral-900 z-50">
+    <div className="flex flex-col overflow-x-hidden overflow-hidden w-full h-full relative flex items-center justify-center bg-neutral-900 z-10">
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
