@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 
-const Projects = dynamic(() => import("@/components/Projects"));
+import Projects from "@/components/Projects";
 const Separator = dynamic(() => import("@/components/custom-ui/separator"));
 const Experiences = dynamic(() => import("@/components/Experience"));
 const TechStack = dynamic(() => import("@/components/TechStack"));
