@@ -34,7 +34,7 @@ export default function Projects() {
                 >
                     <motion.h2
                         id="projects"
-                        className={`${dmSerifText.className} mb-[-22px] text-left text-3xl lg:text-4xl z-80 text-white`}                        
+                        className={`${dmSerifText.className} mb-[-24px] text-left text-3xl lg:text-4xl z-80 text-white`}                        
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{

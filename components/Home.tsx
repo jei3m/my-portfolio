@@ -8,7 +8,6 @@ const Contact = dynamic(() => import("@/components/contact"));
 const Experiences = dynamic(() => import("@/components/Experience"));
 const TechStack = dynamic(() => import("@/components/TechStack"));
 const ProfileCard = dynamic(() => import("@/components/ProfileCard"));
-const Profile = dynamic(() => import("@/components/Profile"));
 import Footer from "@/components/Footer";
 
 export default function Home() {

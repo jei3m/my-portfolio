@@ -5,6 +5,7 @@ import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { Reveal } from "./custom-ui/reveal";
 import { IBM_Plex_Serif } from "next/font/google";
 import EmailModal from './custom-ui/email-modal'; 
 
@@ -99,6 +100,11 @@ export default function ProfileCard() {
         <motion.div variants={childVariants} initial="hidden" animate="visible">
           <div className="text-left mb-4 font-semibold text-sm md:text-lg">Hello! 🙂‍↕️</div>
         </motion.div>
+
+        <Reveal
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
+          >
         <motion.div 
           className="max-w-[870px] bg-gray-900 p-2 rounded-lg shadow-xl border border-white/[0.4]"
           variants={containerVariants}
@@ -107,9 +113,12 @@ export default function ProfileCard() {
         >
           <div className="md:flex items-center">
             <div className="md:flex-shrink-0 flex justify-center py-4 md:pl-8">
-              <motion.div 
+              <Reveal
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
+              >
+              <div 
                 className="mr-4 relative w-40 h-40 sm:w-40 sm:h-40 md:w-48 md:h-60 lg:w-56 lg:h-64 mb-sm-30"
-                variants={imageVariants}
               >
                 <Image
                   className="rounded-lg object-cover"
@@ -117,15 +126,25 @@ export default function ProfileCard() {
                   alt="Profile picture"
                   fill
                 />
-              </motion.div>
+              </div>
+              </Reveal>
             </div>
             <div className="py-8 px-3 flex-grow">
+              <Reveal
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+              >
               <motion.h1 
                 className={`${ibmPlexSerif.className} text-4xl leading-8 font-semibold tracking-tight text-white md:text-5xl`}
                 variants={childVariants}
               >
                 Justin Miguel
               </motion.h1>
+              </Reveal>
+              <Reveal
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+              >
               <motion.p 
                 className="mt-2 text-gray-400 font-semibold flex items-center"  
                 variants={childVariants}
@@ -133,12 +152,23 @@ export default function ProfileCard() {
                 <MapPin className="h-5 w-5 mr-1" />
                 Floridablanca, PH
               </motion.p>
+              </Reveal>
+              <Reveal
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+              >
               <motion.p 
                 className="mt-4 text-lg text-gray-300"
                 variants={childVariants}
               >
                 A Computer Engineering student and Tech Enthusiast with a foundation in Web Development, IoT, and IT.<span className="text-2xl">👨🏻‍💻</span>
               </motion.p>
+              </Reveal>
+
+              <Reveal
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+              >
               <motion.div 
                 className="mt-5 flex space-x-4"
                 variants={childVariants}
@@ -194,7 +224,12 @@ export default function ProfileCard() {
                   </a>
                 </motion.div>
               </motion.div>
-
+              </Reveal>
+              
+              <Reveal
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+              >
               <motion.div 
                 className="mt-4 flex items-center justify-between"
                 variants={childVariants}
@@ -235,9 +270,12 @@ export default function ProfileCard() {
                   </div>
                 </motion.div>
               </motion.div>
+              </Reveal>
+              
             </div>
           </div>
         </motion.div>
+        </Reveal>
       </div>
 
       <EmailModal 
