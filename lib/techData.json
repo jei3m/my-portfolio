@@ -1,18 +1,24 @@
-
 [
   {
-    "title": "React.js",
-    "description": "Building dynamic and responsive user interfaces with React's component-based architecture.",
-    "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+    "title": "Frameworks",
+    "description": "Building responsive and efficient user experiences with front-end and full-stack applications.",    
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg"
+    ]
   },
   {
-    "title": "Next.js",
-    "description": "Leveraging server-side rendering and static site generation for optimal performance and SEO.",
-    "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg"
+    "title": "JS Ecosystem",
+     "description": "Developing interactive and dynamic applications for both front-end and backend development.",    
+     "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
+    ]
   },
   {
     "title": "HTML & CSS",
-    "description": "Crafting semantic markup and designs with modern HTML5 and CSS3.",
+    "description": "Crafting semantic markup and styling with modern HTML5 and CSS3.",
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
@@ -24,21 +30,24 @@
     "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
   },
   {
-    "title": "Python",
-    "description": "For machine learning algorithms for data analysis and predictive modeling.",
-    "icon": "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg"
-  },
-  {
-    "title": "Firebase & Supabase",
-    "description": "For real-time databases, authentication, and cloud functions.",
+    "title": "Backend Services",
+    "description": "For real-time databases, authentication, and also cloud functions.",    
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg"
     ]
   },
   {
-    "title": "IoT Development",
-    "description": "Developing embedded systems and IoT devices with Arduino and Raspberry Pi.",
+    "title": "Programming",
+    "description": "Python for machine learning and data analysis, and C++ for input/output operations.",
+    "icons": [
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg",
+      "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg"
+    ]
+  },
+  {
+    "title": "Embedded Systems",
+    "description": "Developing IoT devices and embedded systems using Arduino and Raspberry Pi.",
     "icons": [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/arduino-colored.svg",
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/raspberrypi-colored.svg"
@@ -46,7 +55,7 @@
   },
   {
     "title": "AI Integration",
-    "description": "Implementing AI through API inferences and local models like Ollama.",
+    "description": "Implementing AI into applications with API inferences and local models like Ollama.",
     "isLucideIcon": true,
     "LucideIcon": "Brain"
   }
