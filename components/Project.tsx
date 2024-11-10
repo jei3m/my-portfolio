@@ -1,100 +1,135 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import projects from '@/lib/projects.json';
 import { Reveal } from './custom-ui/reveal';
 import { ProjectCard3d } from './custom-ui/project-card';
-import { Button } from './custom-ui/button';
-import { motion } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { DM_Serif_Text } from "next/font/google";
 
 const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
-export default function Projects() {
-    const INITIAL_VISIBLE_PROJECTS = 2;
-    const [visibleProjects, setVisibleProjects] = useState(INITIAL_VISIBLE_PROJECTS);
+const ProjectsCarousel = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
     
-    const showMore = () => {
-        setVisibleProjects(projects.length);
+    // Handle window resize
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768); // 768px is typical md breakpoint
+        };
+        
+        // Set initial value
+        handleResize();
+        
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    
+    const projectsPerPage = isMobile ? 1 : 2;
+    
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) => 
+            prevIndex + projectsPerPage >= projects.length 
+                ? 0 
+                : prevIndex + projectsPerPage
+        );
+    };
+    
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) => 
+            prevIndex - projectsPerPage < 0 
+                ? Math.max(0, projects.length - projectsPerPage) 
+                : prevIndex - projectsPerPage
+        );
     };
 
-    const showLess = () => {
-        setVisibleProjects(INITIAL_VISIBLE_PROJECTS);
-        // Smooth scroll back to the projects section
-        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-    };
-    
+    const displayedProjects = projects.slice(currentIndex, currentIndex + projectsPerPage);
+
     return (
-        <div>
-        <div className="py-2 max-w-[900px] flex flex-col w-full mx-auto relative flex items-center justify-center">
-            <div className="p-4 flex flex-col w-full mx-auto relative flex items-center justify-center">
-                <section id="projects" className="flex flex-col items-start justify-center w-full">
-                <Reveal
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
-                >
-                    <motion.h2
-                        id="projects"
-                        className={`${dmSerifText.className} mb-[-24px] text-left text-3xl lg:text-4xl z-80 text-white`}                        
-                        initial={{ opacity: 0, y: 40 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{
-                            duration: 0.8,
-                            ease: "easeOut"
-                        }}
+        <div className="py-10 bg-neutral-900">
+            <div className="max-w-[920px] mx-auto px-2 flex flex-col items-center justify-center relative">
+                <section id="projects" className="w-full">
+                    <Reveal
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
                     >
-                        Projects
-                    </motion.h2>
-                    {/* <p className="text-sm md:text-lg text-gray-400 mt-2 mb-[-22px]">What I've worked on and what I'm currently working on</p> */}
-
+                        <h2 className={`${dmSerifText.className} mt-4 text-center text-3xl lg:text-5xl text-white`}>
+                            Featured Projects
+                        </h2>
+                        <p className="text-center mt-2 max-w-2xl mb-[-1rem] mx-auto text-sm md:text-lg text-gray-400">
+                            My collection of both personal and school projects.
+                        </p>
                     </Reveal>
 
-                    <div className="flex flex-wrap justify-center gap-x-7 max-w-screen-lg sm:grid sm:grid-cols-2 sm:gap-6 w-full">
-                        {projects.slice(0, visibleProjects).map((project, index) => (
-                            <Reveal
-                                key={project.title}
-                                initial={{ opacity: 0, y: -10 }}
-                                whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: index / 30 } }}
-                            >
-                                <div className="mb-[-50px]">
-                                    <ProjectCard3d
-                                        title={project.title}
-                                        type={project.type}
-                                        description={project.description}
-                                        imageUrl={project.imageUrl}
-                                        githubUrl={project.githubUrl}
-                                        demoUrl={project.demoUrl}
-                                        skills={project.skills}
-                                    />
-                                </div>
-                            </Reveal>
-                        ))}
-                    </div>
-
-                    <div className="mt-10 md:mt-14 flex gap-4 w-full items-start justify-center">
-                        <Reveal
-                            initial={{ opacity: 0, y: -10 }}
-                            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
+                    <div className="relative">
+                        {/* Navigation Buttons */}
+                        <button 
+                            onClick={prevSlide}
+                            className="absolute left-0 md:left-[-60px] top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white hover:bg-white/40 transition-colors z-10"
+                            aria-label="Previous projects"
                         >
-                            {visibleProjects < projects.length ? (
-                                <Button
-                                    onClick={showMore}
-                                    className="px-6 py-1 bg-white text-black text-md rounded-lg hover:bg-black hover:text-white border hover:border-white transition-colors duration-200"
+                            <ChevronLeft className="w-7 h-7 text-black" />
+                        </button>
+                        
+                        <button 
+                            onClick={nextSlide}
+                            className="absolute right-0 md:right-[-60px] top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white hover:bg-white/40 transition-colors z-10"
+                            aria-label="Next projects"
+                        >
+                            <ChevronRight className="w-7 h-7 text-black" />
+                        </button>
+
+                        {/* Projects Container */}
+                        <div className={`
+                            flex justify-center 
+                            ${isMobile ? 'gap-0' : 'gap-6'} 
+                            transition-all duration-500 ease-in-out
+                            mx-8 md:mx-0
+                        `}>
+                            {displayedProjects.map((project, index) => (
+                                <Reveal
+                                    key={`${project.title}-${currentIndex}-${index}`}
+                                    initial={{ opacity: 0, y: -10 }}
+                                    whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: index / 30 } }}
                                 >
-                                 Show More... 
-                                </Button>
-                            ) : visibleProjects > INITIAL_VISIBLE_PROJECTS && (
-                                <Button
-                                    onClick={showLess}
-                                    className="px-6 py-1 bg-white text-black text-md rounded-lg hover:bg-black hover:text-white border hover:border-white transition-colors duration-200"
-                                >
-                                    Show Less...
-                                </Button>
-                            )}
-                        </Reveal>
+                                    <div className={`
+                                        ${isMobile ? 'w-full' : 'w-auto'}
+                                        transform transition-all duration-500
+                                    `}>
+                                        <ProjectCard3d
+                                            title={project.title}
+                                            type={project.type}
+                                            description={project.description}
+                                            imageUrl={project.imageUrl}
+                                            githubUrl={project.githubUrl}
+                                            demoUrl={project.demoUrl}
+                                            skills={project.skills}
+                                        />
+                                    </div>
+                                </Reveal>
+                            ))}
+                        </div>
+
+                        {/* Pagination Dots */}
+                        <div className="flex justify-center gap-2 mt-8">
+                            {Array.from({ length: Math.ceil(projects.length / projectsPerPage) }).map((_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setCurrentIndex(index * projectsPerPage)}
+                                    className={`w-2 h-2 rounded-full transition-colors ${
+                                        index === Math.floor(currentIndex / projectsPerPage)
+                                            ? 'bg-white'
+                                            : 'bg-white/30'
+                                    }`}
+                                    aria-label={`Go to slide ${index + 1}`}
+                                />
+                            ))}
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
-        </div>
     );
-}
+};
+
+export default ProjectsCarousel;

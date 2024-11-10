@@ -13,7 +13,7 @@ const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 const Footer = () => {
     const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
   return (
-    <footer className="relative bg-neutral-900 text-white py-4 overflow-hidden">
+    <footer className="relative bg-neutral-900 text-white py-2 overflow-hidden">
       
       
       <div className="container mx-auto px-4 z-50 relative">
@@ -22,7 +22,7 @@ const Footer = () => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
               >
-          <h3 className={`${dmSerifText.className} text-2xl mb-4 text-center`}>
+          <h3 className={`${dmSerifText.className} text-2xl mb-2 text-center`}>
             Connect With Me
           </h3>
           
@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
           
 
-          <div className=" text-center mt-4 text-sm text-gray-400">
+          <div className=" text-center mt-2 text-sm text-gray-400">
             <p>© 2024 Justin Miguel Reyes. All rights reserved.</p>
           </div>
 

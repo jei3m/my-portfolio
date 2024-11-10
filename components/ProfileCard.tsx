@@ -96,7 +96,7 @@ export default function ProfileCard() {
 
   return (
     <>
-      <div id="profile" className="text-white flex flex-col mx-auto justify-center p-4 mt-[4rem] z-50">
+      <div id="profile" className="text-white flex flex-col mx-auto justify-center p-4 mt-[3.8rem] z-50">
         <motion.div variants={childVariants} initial="hidden" animate="visible">
           <div className="text-left mb-4 font-semibold text-sm md:text-lg">Hello! 🙂‍↕️</div>
         </motion.div>
@@ -106,7 +106,7 @@ export default function ProfileCard() {
             whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
           >
         <motion.div 
-          className="max-w-[870px] bg-gray-900 p-2 rounded-lg shadow-xl border border-white/[0.4]"
+          className="max-w-[888px] bg-gray-900 p-2 rounded-lg shadow-xl border border-white/[0.4]"
           variants={containerVariants}
           initial="hidden"
           animate="visible"

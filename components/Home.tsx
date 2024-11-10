@@ -24,7 +24,9 @@ export default function Home() {
           <ProfileCard />
           <EducationSection />
           <Experiences />
+          <Separator/>    
           <Projects />
+          <Separator/>
           <TechStack />
           <Separator/>
           <Footer/>

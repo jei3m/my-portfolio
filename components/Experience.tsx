@@ -10,8 +10,8 @@ const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
 export default function Component() {
   return (
-    <section className="mt-2 text-white p-4">
-      <div className="max-w-[870px] w-full mx-auto relative">
+    <section className="mb-20 mt-2 text-white p-4">
+      <div className="max-w-[888px] w-full mx-auto relative">
         {/* Header Section */}
         <div className="flex justify-between items-center mb-4">
           <Reveal
