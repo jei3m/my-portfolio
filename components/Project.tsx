@@ -4,7 +4,13 @@ import projects from '@/lib/projects.json';
 import { Reveal } from './custom-ui/reveal';
 import { ProjectCard3d } from './custom-ui/project-card';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { IBM_Plex_Serif } from "next/font/google";
 import { DM_Serif_Text } from "next/font/google";
+
+const ibmPlexSerif = IBM_Plex_Serif({
+  subsets: ["latin"],
+  weight: ["400","500","600", "700"],
+});
 
 const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
@@ -50,14 +56,14 @@ const ProjectsCarousel = () => {
             <div className="max-w-[920px] mx-auto px-2 flex flex-col items-center justify-center relative">
                 <section id="projects" className="w-full">
                     <Reveal
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
                     >
                         <h2 className={`${dmSerifText.className} mt-4 text-center text-3xl lg:text-5xl text-white`}>
                             Featured Projects
                         </h2>
                         <p className="text-center mt-2 max-w-2xl mb-[-1rem] mx-auto text-sm md:text-lg text-gray-400">
-                            My collection of both personal and school projects.
+                         A collection of my personal and school projects.
                         </p>
                     </Reveal>
 
@@ -84,12 +90,12 @@ const ProjectsCarousel = () => {
                             flex justify-center 
                             ${isMobile ? 'gap-0' : 'gap-6'} 
                             transition-all duration-500 ease-in-out
-                            mx-5 lg:mx-0
+                            mx-3 lg:mx-0
                         `}>
                             {displayedProjects.map((project, index) => (
                                 <Reveal
                                     key={`${project.title}-${currentIndex}-${index}`}
-                                    initial={{ opacity: 0, y: -10 }}
+                                    initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: index / 30 } }}
                                 >
                                     <div className={`
