@@ -76,9 +76,9 @@ export default function Component() {
                       <Image
                         src={item.logo}
                         alt={`${item.school || item.school} logo`}
-                        width={64}
-                        height={64}
-                        className="rounded-full bg-white w-16 h-16 sm:w-[86px] sm:h-[86px]"
+                        width={100}
+                        height={100}
+                        className="rounded-full bg-white w-16 h-16 sm:w-[82px] sm:h-[82px]"
                       />
                     </div>
 

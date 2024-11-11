@@ -48,9 +48,9 @@ export default function Component() {
                       <Image
                         src={item.logo}
                         alt={`${item.school || item.school} logo`}
-                        width={64}
-                        height={64}
-                        className="rounded-full bg-white w-16 h-16 sm:w-[86px] sm:h-[86px]"
+                        width={100}
+                        height={100}
+                        className="rounded-full bg-white w-16 h-16 sm:w-[82px] sm:h-[82px]"
                       />
                     </div>
 
@@ -83,7 +83,7 @@ export default function Component() {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                       >
-                        <p className="text-sm sm:text-md text-gray-300 mt-2 whitespace-pre-line">
+                        <p className="text-sm sm:text-md text-gray-300 mt-1 whitespace-pre-line">
                           {item.description}
                         </p>
                       </Reveal>
