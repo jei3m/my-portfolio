@@ -41,6 +41,7 @@ const TechStack: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-5 mb-[-4rem]">
           {techStack.map((tech, index) => (
               <Reveal
+               key={index}
                initial={{ opacity: 0, x: -50 }}
                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4, delay: index / 30 } }}
               >
