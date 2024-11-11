@@ -19,7 +19,7 @@ export default function Component() {
 
   return (
     <section className="text-white p-4">
-      <div className="max-w-[888px] w-full mx-auto relative">
+      <div className="max-w-[884px] w-full mx-auto relative">
         {/* Header Section */}
         <div className="flex justify-between items-center mb-4">
           <Reveal
@@ -78,7 +78,7 @@ export default function Component() {
                         alt={`${item.school || item.school} logo`}
                         width={100}
                         height={100}
-                        className="rounded-full bg-white w-16 h-16 sm:w-[82px] sm:h-[82px]"
+                        className="rounded-full bg-white w-16 h-16 sm:w-[80px] sm:h-[80px]"
                       />
                     </div>
 

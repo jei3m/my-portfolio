@@ -11,7 +11,7 @@ const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 export default function Component() {
   return (
     <section className="mb-20 text-white p-4">
-      <div className="max-w-[888px] w-full mx-auto relative">
+      <div className="max-w-[884px] w-full mx-auto relative">
         {/* Header Section */}
         <div className="flex justify-between items-center mb-4">
           <Reveal
@@ -50,7 +50,7 @@ export default function Component() {
                         alt={`${item.school || item.school} logo`}
                         width={100}
                         height={100}
-                        className="rounded-full bg-white w-16 h-16 sm:w-[82px] sm:h-[82px]"
+                        className="rounded-full bg-white w-16 h-16 sm:w-[80px] sm:h-[80px]"
                       />
                     </div>
 
@@ -83,17 +83,11 @@ export default function Component() {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                       >
+                        <div className="flex flex-col md:flex-row md:justify-between md:items-end">
                         <p className="text-sm sm:text-md text-gray-300 mt-1 whitespace-pre-line">
                           {item.description}
                         </p>
-                      </Reveal>
-
-                      {/* Skills Badges */}
-                      <Reveal
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
-                      >
-                        <div className="mt-2 flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 mt-2 md:mt-0">
                           {item.skills.map((skill, skillIndex) => (
                             <Badge
                               key={skillIndex}
@@ -103,7 +97,16 @@ export default function Component() {
                             </Badge>
                           ))}
                         </div>
+                        </div>
                       </Reveal>
+
+                      {/* Skills Badges */}
+                      {/* <Reveal
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
+                      >
+
+                      </Reveal> */}
                     </div>
                   </div>
                 </div>

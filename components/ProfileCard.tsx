@@ -106,7 +106,7 @@ export default function ProfileCard() {
             whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
           >
         <motion.div 
-          className="max-w-[888px] bg-gray-900 p-2 rounded-lg shadow-xl border border-white/[0.4]"
+          className="max-w-[884px] bg-gray-900 p-2 rounded-lg shadow-xl border border-white/[0.4]"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -129,7 +129,7 @@ export default function ProfileCard() {
               </div>
               </Reveal>
             </div>
-            <div className="py-8 px-3 flex-grow">
+            <div className="py-8 sm:py-4 px-3 flex-grow">
               <Reveal
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4 } }}
