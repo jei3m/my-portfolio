@@ -7,6 +7,7 @@ import { DM_Serif_Text } from "next/font/google";
 import EmailModal from './custom-ui/email-modal';
 import { useState } from 'react';
 import { Reveal } from './custom-ui/reveal';
+import { TransitionLink } from '@/utils/TransitionLink';
 
 const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
@@ -67,12 +68,11 @@ const Footer = () => {
             </div>
 
             <div className="transform transition-transform hover:scale-125 hover:rotate-12">
-              <a
+              <TransitionLink
                 href="/opencv"
-                className="text-red-300 hover:text-white transition-colors"
               >
-                <FileText className="h-7 w-7" />
-              </a>
+                <FileText className="h-7 w-7 text-red-300 hover:text-white transition-colors" />
+              </TransitionLink>
             </div>
           </div>
           
