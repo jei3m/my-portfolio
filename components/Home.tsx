@@ -7,6 +7,7 @@ const TechStack = dynamic(() => import("@/components/TechStack"));
 const ProfileCard = dynamic(() => import("@/components/ProfileCard"));
 const Footer = dynamic(() => import("@/components/Footer"));
 const EducationSection = dynamic(() => import("@/components/Education-Section"));
+import ProfileSection from "@/components/Profile-section";
 
 export default function Home() {
   return (
@@ -20,8 +21,8 @@ export default function Home() {
       {/* Scrollable content layer */}
       <div className="relative z-10 flex min-h-screen w-full">
         <div className="flex flex-col w-full">
+          <ProfileSection />
           <Separator/>
-          <ProfileCard />
           <EducationSection />
           <Experiences />
           <Separator/>    

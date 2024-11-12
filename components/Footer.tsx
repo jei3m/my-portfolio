@@ -13,7 +13,7 @@ const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 const Footer = () => {
     const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
   return (
-    <footer className="relative bg-neutral-900 text-white py-2 overflow-hidden">
+    <footer className="relative bg-neutral-900 text-white py-2">
       
       
       <div className="container mx-auto px-4 z-50 relative">

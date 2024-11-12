@@ -32,7 +32,7 @@ const TechStack: React.FC = () => {
           <h2 className={`${dmSerifText.className} text-3xl lg:text-5xl text-white mb-2`}>
            Technologies & Skills
           </h2>
-          <p className="mb-[10px] mt-2 max-w-2xl mx-auto text-sm md:text-lg text-gray-400">
+          <p className="mb-[8px] mt-2 max-w-2xl mx-auto text-sm md:text-lg text-gray-400">
             My current skill set that&apos;s constantly evolving.
           </p>
         </div>

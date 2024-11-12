@@ -8,10 +8,10 @@ import { Badge } from "./custom-ui/badge";
 
 const dmSerifText = DM_Serif_Text({ weight: "400", subsets: ["latin"] });
 
-export default function Component() {
+export default function Experiences() {
   return (
-    <section className="mb-20 text-white p-4">
-      <div className="max-w-[884px] w-full mx-auto relative">
+    <section className="mb-14 text-white relative">
+      <div className="max-w-[900px] p-4 w-full mx-auto">
         {/* Header Section */}
         <div className="flex justify-between items-center mb-4">
           <Reveal

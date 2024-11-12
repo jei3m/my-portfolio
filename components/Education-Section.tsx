@@ -18,8 +18,8 @@ export default function Component() {
   };
 
   return (
-    <section className="text-white p-4">
-      <div className="max-w-[884px] w-full mx-auto relative">
+    <section className="text-white mt-[2rem] relative">
+      <div className="max-w-[900px] p-4 w-full mx-auto">
         {/* Header Section */}
         <div className="flex justify-between items-center mb-4">
           <Reveal
