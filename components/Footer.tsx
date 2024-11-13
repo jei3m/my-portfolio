@@ -69,8 +69,7 @@ const Footer = () => {
 
             <div className="transform transition-transform hover:scale-125 hover:rotate-12">
               <TransitionLink
-                href="/opencv"
-              >
+                href="/opencv">
                 <FileText className="h-7 w-7 text-red-300 hover:text-white transition-colors" />
               </TransitionLink>
             </div>

@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 const Hero = dynamic(() => import("@/components/Hero"));
-const Home = dynamic(() => import("@/components/Home"));
 
 export default function Page() {
   return (
