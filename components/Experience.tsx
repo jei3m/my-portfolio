@@ -12,6 +12,7 @@ export default function Experiences() {
   return (
     <section className="mb-14 text-white relative">
       <div className="max-w-[900px] p-4 w-full mx-auto">
+
         {/* Header Section */}
         <div className="flex justify-between items-center mb-4">
           <Reveal
@@ -43,6 +44,7 @@ export default function Experiences() {
               >
                 <div className="bg-gray-900 p-3 sm:p-4 rounded-lg shadow-lg border border-white/[0.4] hover:scale-[1.04] transition-all duration-300 cursor-pointer">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+
                     {/* Logo */}
                     <div className="flex-shrink-0">
                       <Image
@@ -88,6 +90,8 @@ export default function Experiences() {
                           {item.description}
                         </p>
                         <div className="flex flex-wrap gap-2 mt-2 md:mt-0">
+
+                          {/* Skills Badges */}
                           {item.skills.map((skill, skillIndex) => (
                             <Badge
                               key={skillIndex}
@@ -99,14 +103,7 @@ export default function Experiences() {
                         </div>
                         </div>
                       </Reveal>
-
-                      {/* Skills Badges */}
-                      {/* <Reveal
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
-                      >
-
-                      </Reveal> */}
+                      
                     </div>
                   </div>
                 </div>

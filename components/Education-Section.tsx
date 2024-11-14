@@ -67,10 +67,10 @@ export default function Component() {
               <Reveal
                 key={index}
                 initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
-              >
+                whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}>
                 <div className="bg-gray-900 p-3 sm:p-4 rounded-lg shadow-lg border border-white/[0.4] hover:scale-[1.04] transition-all duration-300 cursor-pointer">
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+
                     {/* Logo */}
                     <div className="flex-shrink-0">
                       <Image
@@ -88,6 +88,7 @@ export default function Component() {
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
                       >
+                        {/* Card Title */}
                         <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-1 sm:gap-0">
                           <h3 className="text-xl sm:text-2xl font-semibold">
                             {item.school || item.school}
@@ -98,6 +99,7 @@ export default function Component() {
                         </div>
                       </Reveal>
 
+                      {/* Card Subtitle */}
                       <Reveal
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
@@ -107,6 +109,7 @@ export default function Component() {
                         </p>
                       </Reveal>
 
+                      {/* Card Description */}
                       <Reveal
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.4 } }}
