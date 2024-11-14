@@ -21,8 +21,8 @@ export function ProjectCard3d({ title, type, description, imageUrl, githubUrl, d
     return (
         <CardContainer className="inter-var w-full">
             <CardBody 
-                className="md:mb-[-26px] bg-gray-900 border-1 border-white/[0.4] relative group/card hover:shadow-2xl hover:shadow-gray-500/[0.1] w-full max-w-[420px] h-auto mx-auto rounded-xl p-4 sm:p-5 lg:p-3 text-white"
-            >
+                className="md:mb-[-26px] bg-gray-900 border-1 border-white/[0.4] relative group/card hover:shadow-2xl hover:shadow-gray-500/[0.1] w-full max-w-[420px] h-auto mx-auto rounded-xl p-4 sm:p-5 lg:p-3 text-white">
+                
                 <div className="flex flex-col h-full">
                     <CardItem translateZ="36" className="w-full">
                         <AspectRatio ratio={16 / 9} className="bg-muted">

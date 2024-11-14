@@ -68,22 +68,6 @@ const ProjectsCarousel = () => {
                     </Reveal>
 
                     <div className="relative">
-                        {/* Navigation Buttons */}
-                        {/* <button 
-                            onClick={prevSlide}
-                            className="absolute left-0 lg:left-[-60px] top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white hover:bg-white/40 transition-colors z-10"
-                            aria-label="Previous projects"
-                        >
-                            <ChevronLeft className="w-7 h-7 text-black" />
-                        </button>
-                        
-                        <button 
-                            onClick={nextSlide}
-                            className="absolute right-0 lg:right-[-60px] top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white hover:bg-white/40 transition-colors z-10"
-                            aria-label="Next projects"
-                        >
-                            <ChevronRight className="w-7 h-7 text-black" />
-                        </button> */}
 
                         {/* Projects Container */}
                         <div className={`
@@ -116,7 +100,7 @@ const ProjectsCarousel = () => {
                             ))}
                         </div>
 
-                        {/* Pagination Dots */}
+                        {/* Pagination Dots & Navigation Buttons*/}
                         <div className="flex justify-center gap-2 mt-[-20px] md:mt-8">
 
                         <button 

@@ -27,6 +27,7 @@ const TechStack: React.FC = () => {
   return (
     <div className="relative py-24 mb-[2rem]">
       <div className="relative max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Header Section */}
         <div className="text-center">
           <h2 className={`${dmSerifText.className} text-3xl lg:text-5xl text-white mb-2`}>
