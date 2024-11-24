@@ -1,5 +1,17 @@
 [
     {
+        "title": "Trackerteer Web Developer Corporation",
+        "course": "Front-End Web Developer",
+        "school": "November 2024 - PRESENT",
+        "logo": "/Trackerteer.jpg",
+        "description": "• Developed a full-stack website, and will be working on client projects.",
+        "skills": [
+         "Laravel",
+         "MySQL"
+        ]
+    },
+
+    {
         "title": "Freelancing",
         "course": "Web Developer",
         "school": "July 2024 - September 2024",
